@@ -1,0 +1,6 @@
+2025-10-19 22:59:54 | [31mERROR[0m | app | logger.py:294 | <module>() | Message d'erreur
+2025-10-19 22:59:54 | [35mCRITICAL[0m | app | logger.py:295 | <module>() | Message critique
+2025-10-19 23:05:46 | [31mERROR[0m | app | logger.py:294 | <module>() | Message d'erreur
+2025-10-19 23:05:46 | [35mCRITICAL[0m | app | logger.py:295 | <module>() | Message critique
+2025-10-19 23:06:26 | [31mERROR[0m | app | logger.py:294 | <module>() | Message d'erreur
+2025-10-19 23:06:26 | [35mCRITICAL[0m | app | logger.py:295 | <module>() | Message critique

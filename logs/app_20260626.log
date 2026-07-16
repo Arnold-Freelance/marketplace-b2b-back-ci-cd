@@ -1,0 +1,333 @@
+2026-06-26 00:51:08 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-26 00:51:08 | [32mINFO[0m | app | main_new.py:43 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-26 06:29:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-26 06:29:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-26 06:29:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-26 06:29:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 2.244s
+2026-06-26 06:29:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 2.262s
+2026-06-26 06:29:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 2.251s
+2026-06-26 06:30:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:30:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:30:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.115s
+2026-06-26 06:30:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.042s
+2026-06-26 06:30:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/favorites
+2026-06-26 06:30:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/7
+2026-06-26 06:30:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/reviews/products/7
+2026-06-26 06:30:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/favorites [200] 0.059s
+2026-06-26 06:30:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/7 [200] 0.193s
+2026-06-26 06:30:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/reviews/products/7 [200] 0.194s
+2026-06-26 06:30:32 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-26 06:30:32 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-26 06:30:32 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [200] 0.134s
+2026-06-26 06:30:32 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.132s
+2026-06-26 06:30:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1/messages
+2026-06-26 06:30:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1
+2026-06-26 06:30:55 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:30:55 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:30:55 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1/messages [400] 0.055s
+2026-06-26 06:30:55 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1 [400] 0.052s
+2026-06-26 06:33:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-26 06:33:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-26 06:33:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.015s
+2026-06-26 06:33:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [200] 0.105s
+2026-06-26 06:33:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-26 06:33:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-26 06:33:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.071s
+2026-06-26 06:33:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [200] 0.066s
+2026-06-26 06:33:34 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-26 06:33:34 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-26 06:33:34 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [200] 0.087s
+2026-06-26 06:33:34 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.049s
+2026-06-26 06:33:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1/messages
+2026-06-26 06:33:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1
+2026-06-26 06:33:55 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:33:55 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1/messages [400] 0.034s
+2026-06-26 06:33:55 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:33:55 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1 [400] 0.040s
+2026-06-26 06:34:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1
+2026-06-26 06:34:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1/messages
+2026-06-26 06:34:00 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1 [400] 0.031s
+2026-06-26 06:34:00 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1/messages [400] 0.032s
+2026-06-26 06:34:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1
+2026-06-26 06:34:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1/messages
+2026-06-26 06:34:05 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:05 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1 [400] 0.021s
+2026-06-26 06:34:05 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:05 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1/messages [400] 0.022s
+2026-06-26 06:34:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1
+2026-06-26 06:34:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1/messages
+2026-06-26 06:34:10 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1 [400] 0.025s
+2026-06-26 06:34:10 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1/messages [400] 0.033s
+2026-06-26 06:34:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1/messages
+2026-06-26 06:34:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1
+2026-06-26 06:34:18 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:18 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1/messages [400] 0.026s
+2026-06-26 06:34:18 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Vous ne faites pas partie de cette conversation
+2026-06-26 06:34:18 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1 [400] 0.034s
+2026-06-26 06:37:47 | [32mINFO[0m | app | websocket.py:178 | websocket_endpoint() | User 2 disconnected
+2026-06-26 06:37:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-26 06:37:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-26 06:37:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-26 06:37:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.079s
+2026-06-26 06:37:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.100s
+2026-06-26 06:37:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.073s
+2026-06-26 06:38:03 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-26 06:38:03 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-26 06:38:03 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.109s
+2026-06-26 06:38:03 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.109s
+2026-06-26 06:38:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:38:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:38:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.072s
+2026-06-26 06:38:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.039s
+2026-06-26 06:38:07 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/favorites
+2026-06-26 06:38:07 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/7
+2026-06-26 06:38:07 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/reviews/products/7
+2026-06-26 06:38:07 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/favorites [200] 0.070s
+2026-06-26 06:38:07 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/7 [200] 0.081s
+2026-06-26 06:38:07 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/reviews/products/7 [200] 0.070s
+2026-06-26 06:38:12 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-26 06:38:12 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-26 06:38:12 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.072s
+2026-06-26 06:38:12 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [200] 0.079s
+2026-06-26 06:38:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/conversations
+2026-06-26 06:38:18 | [32mINFO[0m | app | messaging_service.py:61 | get_or_create_conversation() | Conversation existante trouvée: 2
+2026-06-26 06:38:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/conversations [201] 0.131s
+2026-06-26 06:38:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2
+2026-06-26 06:38:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2 [200] 0.021s
+2026-06-26 06:38:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2/messages
+2026-06-26 06:38:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2/messages [200] 0.075s
+2026-06-26 06:38:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/messages
+2026-06-26 06:38:50 | [32mINFO[0m | app | messaging_service.py:145 | send_message() | Message 2 créé dans conversation 2
+2026-06-26 06:38:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/messages [201] 0.219s
+2026-06-26 06:40:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/logout
+2026-06-26 06:40:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/logout [200] 0.020s
+2026-06-26 06:41:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-26 06:41:10 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: seed.supplier@market.ci
+2026-06-26 06:41:10 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: seed.supplier@market.ci
+2026-06-26 06:41:11 | [32mINFO[0m | app | auth_service.py:315 | authenticate_user() | Utilisateur 1 connecté avec succès
+2026-06-26 06:41:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.840s
+2026-06-26 06:41:12 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 06:41:12 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.209s
+2026-06-26 06:41:16 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:41:16 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.015s
+2026-06-26 06:41:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:41:21 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.028s
+2026-06-26 06:46:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:46:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:46:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.082s
+2026-06-26 06:46:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.046s
+2026-06-26 06:46:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:46:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:46:15 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.050s
+2026-06-26 06:46:16 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.052s
+2026-06-26 06:46:20 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:46:20 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:46:20 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.043s
+2026-06-26 06:46:20 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.070s
+2026-06-26 06:46:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2
+2026-06-26 06:46:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2/messages
+2026-06-26 06:46:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2 [200] 0.037s
+2026-06-26 06:46:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2/messages [200] 0.112s
+2026-06-26 06:50:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/messages
+2026-06-26 06:50:05 | [32mINFO[0m | app | messaging_service.py:145 | send_message() | Message 3 créé dans conversation 2
+2026-06-26 06:50:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/messages [201] 0.113s
+2026-06-26 06:50:41 | [32mINFO[0m | app | websocket.py:178 | websocket_endpoint() | User 1 disconnected
+2026-06-26 06:50:41 | [32mINFO[0m | app | websocket.py:178 | websocket_endpoint() | User 2 disconnected
+2026-06-26 06:50:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 06:50:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.143s
+2026-06-26 06:50:51 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 06:50:51 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.021s
+2026-06-26 06:50:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2
+2026-06-26 06:50:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2 [200] 0.024s
+2026-06-26 06:50:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2/messages
+2026-06-26 06:50:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2/messages [200] 0.079s
+2026-06-26 06:55:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2/messages
+2026-06-26 06:55:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2
+2026-06-26 06:55:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2 [200] 0.084s
+2026-06-26 06:55:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2/messages [200] 0.089s
+2026-06-26 06:56:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1
+2026-06-26 06:56:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/1/messages
+2026-06-26 06:56:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1 [200] 0.065s
+2026-06-26 06:56:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/1/messages [200] 0.067s
+2026-06-26 06:56:28 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:56:28 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.078s
+2026-06-26 06:56:35 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 06:56:35 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.042s
+2026-06-26 06:56:43 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:56:43 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.070s
+2026-06-26 06:56:48 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:56:48 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.077s
+2026-06-26 06:57:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:57:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.059s
+2026-06-26 06:57:08 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:57:08 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.030s
+2026-06-26 06:57:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:57:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.090s
+2026-06-26 06:57:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:57:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.053s
+2026-06-26 06:57:30 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:57:30 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.032s
+2026-06-26 06:57:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:57:33 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.084s
+2026-06-26 06:57:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 06:57:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.058s
+2026-06-26 07:00:24 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 07:00:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.063s
+2026-06-26 07:02:30 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 07:02:30 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.095s
+2026-06-26 07:10:42 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:10:42 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.054s
+2026-06-26 07:10:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-26 07:10:54 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.034s
+2026-06-26 07:10:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/6
+2026-06-26 07:10:54 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/6 [200] 0.050s
+2026-06-26 07:14:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 07:14:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.104s
+2026-06-26 07:16:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:16:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.055s
+2026-06-26 07:16:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 07:16:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-26 07:16:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.112s
+2026-06-26 07:16:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.111s
+2026-06-26 07:16:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/8
+2026-06-26 07:16:52 | [32mINFO[0m | app | product_service.py:139 | update() | Produit mis à jour - ID: 8
+2026-06-26 07:16:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/8 [200] 0.150s
+2026-06-26 07:16:58 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 07:16:58 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.079s
+2026-06-26 07:21:04 | [32mINFO[0m | app | websocket.py:178 | websocket_endpoint() | User 1 disconnected
+2026-06-26 07:21:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 07:21:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.112s
+2026-06-26 07:21:14 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:21:14 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.061s
+2026-06-26 07:21:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-26 07:21:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 07:21:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.048s
+2026-06-26 07:21:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.064s
+2026-06-26 07:47:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 07:47:02 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.166s
+2026-06-26 07:47:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:47:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.085s
+2026-06-26 07:47:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-26 07:47:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 07:47:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.054s
+2026-06-26 07:47:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.044s
+2026-06-26 07:48:42 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/8
+2026-06-26 07:48:43 | [32mINFO[0m | app | product_service.py:139 | update() | Produit mis à jour - ID: 8
+2026-06-26 07:48:43 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/8 [200] 0.079s
+2026-06-26 07:48:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-26 07:48:54 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.072s
+2026-06-26 07:49:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:49:33 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.109s
+2026-06-26 07:49:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:49:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.085s
+2026-06-26 07:49:51 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/orders/1/status
+2026-06-26 07:49:52 | [32mINFO[0m | app | order_service.py:334 | update_order_status() | Statut commande 1: OrderStatus.PENDING -> OrderStatus.CONFIRMED
+2026-06-26 07:49:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/orders/1/status [200] 0.255s
+2026-06-26 07:49:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:49:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.053s
+2026-06-26 07:50:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:50:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.036s
+2026-06-26 07:50:14 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:50:14 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.057s
+2026-06-26 07:50:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:50:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.043s
+2026-06-26 07:50:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:50:21 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.044s
+2026-06-26 07:56:46 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:56:46 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.071s
+2026-06-26 07:56:53 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:56:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.032s
+2026-06-26 07:57:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:57:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.036s
+2026-06-26 07:57:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:57:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.033s
+2026-06-26 07:57:14 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:57:14 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.129s
+2026-06-26 07:57:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:57:23 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.113s
+2026-06-26 07:57:34 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:57:34 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.135s
+2026-06-26 07:57:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:57:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.104s
+2026-06-26 07:57:43 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 07:57:43 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.072s
+2026-06-26 07:57:48 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 07:57:48 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:57:48 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.119s
+2026-06-26 07:57:49 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.065s
+2026-06-26 07:57:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 07:57:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 07:57:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.207s
+2026-06-26 07:57:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.210s
+2026-06-26 07:58:57 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders/1
+2026-06-26 07:58:57 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders/1 [200] 0.047s
+2026-06-26 07:59:30 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/orders/1/status
+2026-06-26 07:59:30 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Transition de statut invalide: confirmed -> shipped
+2026-06-26 07:59:30 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/orders/1/status [400] 0.033s
+2026-06-26 08:01:51 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 08:01:51 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.023s
+2026-06-26 08:01:51 | [32mINFO[0m | app | main_new.py:52 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-26 08:01:59 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-26 08:02:01 | [32mINFO[0m | app | main_new.py:43 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-26 08:04:28 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/orders/1/status
+2026-06-26 08:04:29 | [32mINFO[0m | app | order_service.py:334 | update_order_status() | Statut commande 1: OrderStatus.CONFIRMED -> OrderStatus.SHIPPED
+2026-06-26 08:04:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/orders/1/status [200] 0.668s
+2026-06-26 08:04:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 08:04:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.059s
+2026-06-26 08:04:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/orders/1/status
+2026-06-26 08:04:50 | [32mINFO[0m | app | order_service.py:334 | update_order_status() | Statut commande 1: OrderStatus.SHIPPED -> OrderStatus.DELIVERED
+2026-06-26 08:04:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/orders/1/status [200] 0.124s
+2026-06-26 08:04:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 08:04:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.049s
+2026-06-26 08:06:30 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 08:06:30 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.046s
+2026-06-26 08:06:35 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders/1
+2026-06-26 08:06:35 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders/1 [200] 0.070s
+2026-06-26 08:06:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-26 08:06:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.047s
+2026-06-26 08:07:12 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders/1
+2026-06-26 08:07:12 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders/1 [200] 0.064s
+2026-06-26 08:07:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-26 08:07:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.072s
+2026-06-26 08:07:34 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2
+2026-06-26 08:07:34 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2 [200] 0.034s
+2026-06-26 08:07:34 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations/2/messages
+2026-06-26 08:07:35 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations/2/messages [200] 0.100s
+2026-06-26 08:09:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/users/me/company-profile
+2026-06-26 08:09:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/users/me/company-profile [200] 0.086s
+2026-06-26 08:13:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/users/me/company-profile
+2026-06-26 08:13:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/users/me/company-profile [200] 0.026s
+2026-06-26 08:18:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/users/me/company-profile
+2026-06-26 08:18:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/users/me/company-profile [200] 0.029s
+2026-06-26 08:41:10 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-26 08:41:11 | [32mINFO[0m | app | main_new.py:43 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-26 08:47:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 08:47:57 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 1.818s
+2026-06-26 09:55:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 09:55:06 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 1.104s
+2026-06-26 10:37:46 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-26 10:37:47 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.761s
+2026-06-26 10:39:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/reviews/products/5
+2026-06-26 10:39:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/favorites
+2026-06-26 10:39:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/5
+2026-06-26 10:39:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/reviews/products/5 [200] 0.597s
+2026-06-26 10:39:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/favorites [200] 0.576s
+2026-06-26 10:39:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/5 [200] 0.579s
+2026-06-26 10:39:56 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/favorites
+2026-06-26 10:39:56 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/3
+2026-06-26 10:39:56 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/reviews/products/3
+2026-06-26 10:39:56 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/favorites [200] 0.125s
+2026-06-26 10:39:56 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/3 [200] 0.095s
+2026-06-26 10:39:56 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/reviews/products/3 [200] 0.094s
+2026-06-26 10:40:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-26 10:40:14 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.086s
+2026-06-26 10:40:14 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/5
+2026-06-26 10:40:14 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/5 [200] 0.034s
+2026-06-26 10:41:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-26 10:41:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/users/me/company-profile
+2026-06-26 10:41:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.122s
+2026-06-26 10:41:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/users/me/company-profile [200] 0.120s

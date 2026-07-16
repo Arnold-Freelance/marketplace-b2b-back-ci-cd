@@ -1,0 +1,9 @@
+2026-06-22 15:07:43 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-22 15:07:44 | [32mINFO[0m | app | main_new.py:37 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-22 15:07:45 | [32mINFO[0m | app | main_new.py:41 | lifespan() | ✅ Base de données initialisée
+2026-06-22 15:08:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/docs
+2026-06-22 15:08:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/docs [200] 0.002s
+2026-06-22 15:08:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/openapi.json
+2026-06-22 15:08:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/openapi.json [200] 0.251s
+2026-06-22 15:16:07 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/reviews/create
+2026-06-22 15:16:07 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/reviews/create [401] 0.002s

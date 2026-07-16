@@ -1,0 +1,90 @@
+<!-- ====================================================== -->
+<!-- app/templates/emails/verification_email.html -->
+<!-- Template de vérification d'email -->
+{% extends "base.html" %}
+
+{% block title %}Vérification d'email - {{ app_name }}{% endblock %}
+
+{% block header_title %}✉️ Vérification d'email{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .token-box {
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        border: 2px dashed #ccc;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .token-code {
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        color: #667eea;
+        font-weight: bold;
+        letter-spacing: 2px;
+        word-break: break-all;
+    }
+    .options-container {
+        margin: 30px 0;
+    }
+    .option-card {
+        background: #f9f9f9;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border-left: 4px solid #4CAF50;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<p>Bonjour <strong>{{ user_name }}</strong>,</p>
+
+<p>Merci de vous être inscrit sur <strong>{{ app_name }}</strong> ! 🎉</p>
+
+<p>Pour activer votre compte, choisissez une des options ci-dessous :</p>
+
+<!-- Option 1: Deep Link Mobile -->
+<div class="options-container">
+    <div class="option-card">
+        <h3 style="margin-top: 0;">📱 Option 1 : Sur mobile</h3>
+        <center>
+            <a href="{{ mobile_link }}" class="button">
+                Ouvrir dans l'application
+            </a>
+        </center>
+    </div>
+
+    <!-- Option 2: Web Link -->
+    <div class="option-card">
+        <h3 style="margin-top: 0;">🌐 Option 2 : Sur ordinateur</h3>
+        <center>
+            <a href="{{ web_link }}" class="button button-secondary">
+                Vérifier dans le navigateur
+            </a>
+        </center>
+    </div>
+
+    <!-- Option 3: Code Manuel -->
+    <div class="option-card">
+        <h3 style="margin-top: 0;">✍️ Option 3 : Code manuel</h3>
+        <p style="margin: 5px 0; font-size: 14px;">
+            Copiez ce code et collez-le dans l'application :
+        </p>
+        <div class="token-box">
+            <div class="token-code">{{ token_preview }}...</div>
+        </div>
+    </div>
+</div>
+
+<hr class="divider">
+
+<p style="font-size: 14px; color: #666;">
+    ⏱️ Ce lien expire dans <strong>24 heures</strong>.
+</p>
+
+<p style="font-size: 13px; color: #999;">
+    Si vous n'avez pas créé de compte, ignorez cet email.
+</p>
+{% endblock %}

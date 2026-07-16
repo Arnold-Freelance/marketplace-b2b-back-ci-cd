@@ -1,0 +1,8 @@
+2026-06-25 02:07:22 | [31mERROR[0m | app | notification_service.py:59 | create_notification() | Erreur create_notification: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne « action_url » de la relation « notifications » n'existe pas
+LINE 1: ...id, type, title, message, data, is_read, read_at, action_url...
+                                                             ^
+
+[SQL: INSERT INTO notifications (user_id, type, title, message, data, is_read, read_at, action_url, action_label, expires_at) VALUES (%(user_id)s, %(type)s, %(title)s, %(message)s, %(data)s::JSON, %(is_read)s, %(read_at)s, %(action_url)s, %(action_label)s, %(expires_at)s) RETURNING notifications.id, notifications.created_at]
+[parameters: {'user_id': 4, 'type': 'ORDER_CREATED', 'title': 'Test', 'message': 'Une commande', 'data': '{"order_id": 1}', 'is_read': False, 'read_at': None, 'action_url': None, 'action_label': None, 'expires_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-25 02:45:00 | [31mERROR[0m | app | messaging_service.py:88 | get_or_create_conversation() | Erreur get_or_create_conversation: 'UserEntity' object has no attribute 'first_name'

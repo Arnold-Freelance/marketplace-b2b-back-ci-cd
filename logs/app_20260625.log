@@ -1,0 +1,279 @@
+2026-06-25 02:07:22 | [31mERROR[0m | app | notification_service.py:59 | create_notification() | Erreur create_notification: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne « action_url » de la relation « notifications » n'existe pas
+LINE 1: ...id, type, title, message, data, is_read, read_at, action_url...
+                                                             ^
+
+[SQL: INSERT INTO notifications (user_id, type, title, message, data, is_read, read_at, action_url, action_label, expires_at) VALUES (%(user_id)s, %(type)s, %(title)s, %(message)s, %(data)s::JSON, %(is_read)s, %(read_at)s, %(action_url)s, %(action_label)s, %(expires_at)s) RETURNING notifications.id, notifications.created_at]
+[parameters: {'user_id': 4, 'type': 'ORDER_CREATED', 'title': 'Test', 'message': 'Une commande', 'data': '{"order_id": 1}', 'is_read': False, 'read_at': None, 'action_url': None, 'action_label': None, 'expires_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-25 02:17:01 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:18:27 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:18:33 | [32mINFO[0m | app | main_new.py:38 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 02:23:21 | [32mINFO[0m | app | main_new.py:47 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 02:23:25 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:23:26 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:23:29 | [32mINFO[0m | app | main_new.py:38 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 02:23:30 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:24:22 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:25:34 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:25:40 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:25:45 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:33:24 | [32mINFO[0m | app | main_new.py:47 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 02:33:30 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:33:31 | [32mINFO[0m | app | main_new.py:38 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 02:45:00 | [31mERROR[0m | app | messaging_service.py:88 | get_or_create_conversation() | Erreur get_or_create_conversation: 'UserEntity' object has no attribute 'first_name'
+2026-06-25 02:52:29 | [32mINFO[0m | app | main_new.py:47 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 02:52:33 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 02:52:34 | [32mINFO[0m | app | main_new.py:38 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 03:58:53 | [32mINFO[0m | app | main_new.py:47 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 03:58:55 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 03:58:55 | [32mINFO[0m | app | main_new.py:39 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 10:01:18 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 10:44:50 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 10:45:58 | [32mINFO[0m | app | main_new.py:48 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 10:46:03 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 10:46:03 | [32mINFO[0m | app | main_new.py:42 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 11:23:26 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 11:23:28 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 11:28:30 | [32mINFO[0m | app | main_new.py:51 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 11:28:33 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 11:28:33 | [32mINFO[0m | app | main_new.py:43 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 11:28:38 | [32mINFO[0m | app | main_new.py:52 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 11:28:43 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 11:28:43 | [32mINFO[0m | app | main_new.py:43 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 11:47:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-25 11:47:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-25 11:47:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-25 11:47:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [401] 0.107s
+2026-06-25 11:47:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [401] 0.090s
+2026-06-25 11:47:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [401] 0.098s
+2026-06-25 12:18:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 12:18:55 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: abolearnold2102@gmail.com
+2026-06-25 12:18:55 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: abolearnold2102@gmail.com
+2026-06-25 12:18:57 | [33mWARNING[0m | app | auth_service.py:298 | authenticate_user() | Utilisateur non trouvé: abolearnold2102@gmail.com
+2026-06-25 12:18:57 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-06-25 12:18:57 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 3.474s
+2026-06-25 12:19:32 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 12:19:32 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: abolearnold2102@gmail.com
+2026-06-25 12:19:32 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: abolearnold2102@gmail.com
+2026-06-25 12:19:32 | [33mWARNING[0m | app | auth_service.py:298 | authenticate_user() | Utilisateur non trouvé: abolearnold2102@gmail.com
+2026-06-25 12:19:32 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-06-25 12:19:32 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.053s
+2026-06-25 12:19:46 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 12:19:46 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: abolearnold2102@gmail.com
+2026-06-25 12:19:46 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: abolearnold2102@gmail.com
+2026-06-25 12:19:46 | [33mWARNING[0m | app | auth_service.py:298 | authenticate_user() | Utilisateur non trouvé: abolearnold2102@gmail.com
+2026-06-25 12:19:46 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-06-25 12:19:46 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.057s
+2026-06-25 12:21:57 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 12:21:57 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: abolearnold2102@gmail.com
+2026-06-25 12:21:57 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: abolearnold2102@gmail.com
+2026-06-25 12:21:57 | [33mWARNING[0m | app | auth_service.py:298 | authenticate_user() | Utilisateur non trouvé: abolearnold2102@gmail.com
+2026-06-25 12:21:57 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-06-25 12:21:57 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.030s
+2026-06-25 12:22:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 12:22:41 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: abolearnold2102@gmail.com
+2026-06-25 12:22:41 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: abolearnold2102@gmail.com
+2026-06-25 12:22:41 | [33mWARNING[0m | app | auth_service.py:298 | authenticate_user() | Utilisateur non trouvé: abolearnold2102@gmail.com
+2026-06-25 12:22:41 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-06-25 12:22:41 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.021s
+2026-06-25 12:26:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-06-25 12:26:50 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: abolearnold2102@gmail.com
+2026-06-25 12:26:50 | [32mINFO[0m | app | auth_service.py:224 | register_user() | Tentative d'inscription: abolearnold2102@gmail.com
+2026-06-25 12:26:51 | [32mINFO[0m | app | auth_service.py:241 | register_user() | User créé avec ID: 3
+2026-06-25 12:26:51 | [32mINFO[0m | app | auth_service.py:251 | register_user() | Profil entreprise créé pour user 3
+2026-06-25 12:26:51 | [32mINFO[0m | app | auth_service.py:253 | register_user() | Utilisateur 3 inscrit avec succès
+2026-06-25 12:26:56 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à abolearnold2102@gmail.com: Vérifiez votre email - MarketPlace B2B
+2026-06-25 12:26:56 | [32mINFO[0m | app | auth_service.py:267 | register_user() | Email de vérification envoyé à abolearnold2102@gmail.com
+2026-06-25 12:26:56 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 6.369s
+2026-06-25 12:27:40 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 12:27:40 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: abolearnold2102@gmail.com
+2026-06-25 12:27:40 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: abolearnold2102@gmail.com
+2026-06-25 12:27:40 | [32mINFO[0m | app | auth_service.py:315 | authenticate_user() | Utilisateur 3 connecté avec succès
+2026-06-25 12:27:40 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.695s
+2026-06-25 12:27:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-25 12:27:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-25 12:27:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-25 12:27:42 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.578s
+2026-06-25 12:27:42 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.560s
+2026-06-25 12:27:42 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.567s
+2026-06-25 12:28:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 12:28:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 12:28:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.143s
+2026-06-25 12:28:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.146s
+2026-06-25 12:38:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-25 12:38:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-25 12:38:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-25 12:38:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 1.166s
+2026-06-25 12:38:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 1.133s
+2026-06-25 12:38:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 1.132s
+2026-06-25 13:19:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/logout
+2026-06-25 13:19:21 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/logout [200] 0.058s
+2026-06-25 13:23:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 13:23:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 13:23:23 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [401] 0.029s
+2026-06-25 13:23:23 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [401] 0.035s
+2026-06-25 13:33:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 13:33:00 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: seed.supplier@market.ci
+2026-06-25 13:33:00 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: seed.supplier@market.ci
+2026-06-25 13:33:01 | [32mINFO[0m | app | auth_service.py:315 | authenticate_user() | Utilisateur 1 connecté avec succès
+2026-06-25 13:33:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 1.225s
+2026-06-25 13:33:03 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 13:33:03 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.489s
+2026-06-25 13:33:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 13:33:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.077s
+2026-06-25 13:33:24 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 13:33:24 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.193s
+2026-06-25 13:35:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 13:35:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.063s
+2026-06-25 13:38:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/orders
+2026-06-25 13:38:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/orders [200] 0.066s
+2026-06-25 13:38:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-25 13:38:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.097s
+2026-06-25 13:38:08 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/conversations
+2026-06-25 13:38:08 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/conversations [200] 0.030s
+2026-06-25 13:41:07 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/logout
+2026-06-25 13:41:07 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/logout [200] 0.020s
+2026-06-25 13:41:57 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 13:41:57 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: buyer.test@market.ci
+2026-06-25 13:41:57 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: buyer.test@market.ci
+2026-06-25 13:41:58 | [32mINFO[0m | app | auth_service.py:315 | authenticate_user() | Utilisateur 2 connecté avec succès
+2026-06-25 13:41:58 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.485s
+2026-06-25 13:41:58 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-25 13:41:58 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-25 13:41:58 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-25 13:41:58 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.117s
+2026-06-25 13:41:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.129s
+2026-06-25 13:41:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.129s
+2026-06-25 13:42:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 13:42:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 13:42:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.093s
+2026-06-25 13:42:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.039s
+2026-06-25 13:42:08 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/favorites
+2026-06-25 13:42:08 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/reviews/products/7
+2026-06-25 13:42:08 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/7
+2026-06-25 13:42:08 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/favorites [200] 0.181s
+2026-06-25 13:42:08 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/reviews/products/7 [200] 0.234s
+2026-06-25 13:42:08 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/7 [200] 0.065s
+2026-06-25 13:42:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-25 13:42:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-25 13:42:18 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [404] 0.011s
+2026-06-25 13:42:18 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [404] 0.007s
+2026-06-25 13:44:42 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/cart/items
+2026-06-25 13:44:43 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 7 ajouté au panier
+2026-06-25 13:44:43 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/cart/items [201] 0.449s
+2026-06-25 13:45:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-06-25 13:45:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [200] 0.027s
+2026-06-25 13:46:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/orders
+2026-06-25 13:46:45 | [32mINFO[0m | app | order_service.py:112 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 2
+2026-06-25 13:46:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/orders [201] 0.463s
+2026-06-25 14:00:11 | [32mINFO[0m | app | main_new.py:52 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-25 14:00:16 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-25 14:00:17 | [32mINFO[0m | app | main_new.py:43 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-25 14:01:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/orders
+2026-06-25 14:01:50 | [33mWARNING[0m | app | exception_middleware.py:105 | business_rule_handler() | Règle métier violée: Votre panier est vide
+2026-06-25 14:01:50 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/orders [400] 0.589s
+2026-06-25 14:10:08 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-06-25 14:10:08 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [200] 0.318s
+2026-06-25 14:11:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:11:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:11:06 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.171s
+2026-06-25 14:11:06 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.015s
+2026-06-25 14:11:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:11:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:11:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.027s
+2026-06-25 14:11:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.027s
+2026-06-25 14:11:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/logout
+2026-06-25 14:11:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/logout [200] 0.017s
+2026-06-25 14:13:27 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 14:13:27 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: seed.supplier@market.ci
+2026-06-25 14:13:27 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: seed.supplier@market.ci
+2026-06-25 14:13:28 | [32mINFO[0m | app | auth_service.py:315 | authenticate_user() | Utilisateur 1 connecté avec succès
+2026-06-25 14:13:28 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.800s
+2026-06-25 14:13:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 14:13:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.396s
+2026-06-25 14:13:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 14:13:42 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.060s
+2026-06-25 14:13:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 14:13:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.070s
+2026-06-25 14:13:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:13:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.057s
+2026-06-25 14:14:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/8
+2026-06-25 14:14:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/8 [200] 0.060s
+2026-06-25 14:14:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/7
+2026-06-25 14:14:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/7 [200] 0.031s
+2026-06-25 14:14:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/7
+2026-06-25 14:14:39 | [32mINFO[0m | app | product_service.py:139 | update() | Produit mis à jour - ID: 7
+2026-06-25 14:14:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/7 [200] 0.130s
+2026-06-25 14:14:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:14:54 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.088s
+2026-06-25 14:15:03 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:15:03 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.037s
+2026-06-25 14:15:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:15:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.053s
+2026-06-25 14:15:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:15:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.045s
+2026-06-25 14:15:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:15:15 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.064s
+2026-06-25 14:15:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:15:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.050s
+2026-06-25 14:16:20 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:16:20 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.053s
+2026-06-25 14:16:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:16:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.040s
+2026-06-25 14:16:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:16:54 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.039s
+2026-06-25 14:24:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:24:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.528s
+2026-06-25 14:24:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 14:24:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.186s
+2026-06-25 14:30:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 14:30:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.106s
+2026-06-25 14:31:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/supplier/dashboard
+2026-06-25 14:31:33 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/supplier/dashboard [200] 0.085s
+2026-06-25 14:31:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/logout
+2026-06-25 14:31:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/logout [200] 0.003s
+2026-06-25 14:36:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-25 14:36:37 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: buyer.test@market.ci
+2026-06-25 14:36:37 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: buyer.test@market.ci
+2026-06-25 14:36:38 | [32mINFO[0m | app | auth_service.py:315 | authenticate_user() | Utilisateur 2 connecté avec succès
+2026-06-25 14:36:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.806s
+2026-06-25 14:36:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-25 14:36:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-25 14:36:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-25 14:36:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.303s
+2026-06-25 14:36:40 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.606s
+2026-06-25 14:36:40 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.608s
+2026-06-25 14:36:51 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:36:51 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 14:36:51 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.131s
+2026-06-25 14:36:51 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.120s
+2026-06-25 14:36:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/1
+2026-06-25 14:36:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/favorites
+2026-06-25 14:36:54 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/reviews/products/1
+2026-06-25 14:36:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/1 [200] 0.078s
+2026-06-25 14:36:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/favorites [200] 0.134s
+2026-06-25 14:36:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/reviews/products/1 [200] 0.100s
+2026-06-25 14:36:58 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-25 14:36:58 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-25 14:36:58 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.041s
+2026-06-25 14:36:58 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [200] 0.103s
+2026-06-25 15:37:27 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-25 15:37:27 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-25 15:37:27 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-25 15:37:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 1.224s
+2026-06-25 15:37:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 1.235s
+2026-06-25 15:37:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 1.290s
+2026-06-25 23:04:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 23:04:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-06-25 23:04:46 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.954s
+2026-06-25 23:04:46 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.924s
+2026-06-25 23:04:53 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/favorites
+2026-06-25 23:04:53 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/reviews/products/5
+2026-06-25 23:04:53 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/5
+2026-06-25 23:04:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/favorites [200] 0.123s
+2026-06-25 23:04:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/reviews/products/5 [200] 0.288s
+2026-06-25 23:04:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/5 [200] 0.294s
+2026-06-25 23:05:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-06-25 23:05:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.048s
+2026-06-25 23:05:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1/products
+2026-06-25 23:05:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1/products [200] 0.088s

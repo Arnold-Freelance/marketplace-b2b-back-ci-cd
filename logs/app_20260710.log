@@ -1,0 +1,285 @@
+2026-07-10 14:02:22 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:03:39 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:04:25 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:04:27 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:04:53 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:04:55 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:05:08 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:05:09 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-10 14:05:09 | [32mINFO[0m | app | cart_service.py:111 | add_to_cart() | Quantité mise à jour dans le panier: 5
+2026-07-10 14:05:09 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:09 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.030s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.014s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.010s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.006s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-10 14:05:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.001s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-10 14:05:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.003s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-10 14:05:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-10 14:05:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-10 14:05:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.002s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.039s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.014s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.017s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.023s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.014s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.014s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.012s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.014s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.013s
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.047s
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.016s
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.015s
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:11 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'greater_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be greater than or equal to 1', 'input': '0', 'ctx': {'ge': 1}}]
+2026-07-10 14:05:11 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be greater than or equal to 1']
+2026-07-10 14:05:11 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.004s
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:05:11 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'less_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be less than or equal to 100', 'input': '500', 'ctx': {'le': 100}}]
+2026-07-10 14:05:11 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be less than or equal to 100']
+2026-07-10 14:05:11 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.020s
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-07-10 14:05:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.007s
+2026-07-10 14:07:43 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:07:45 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:11:03 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:11:25 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:11:27 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:11:29 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:58:55 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:58:57 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 14:58:59 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-10 14:58:59 | [32mINFO[0m | app | cart_service.py:111 | add_to_cart() | Quantité mise à jour dans le panier: 5
+2026-07-10 14:58:59 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 14:58:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-10 14:58:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.033s
+2026-07-10 14:58:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-10 14:58:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.007s
+2026-07-10 14:58:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-10 14:58:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.007s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.018s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-10 14:59:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.002s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-10 14:59:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.002s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-10 14:59:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-10 14:59:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-10 14:59:00 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.002s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.035s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.015s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.021s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.015s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.014s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.022s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.018s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.017s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.022s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.052s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.017s
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:00 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.016s
+2026-07-10 14:59:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:01 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'greater_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be greater than or equal to 1', 'input': '0', 'ctx': {'ge': 1}}]
+2026-07-10 14:59:01 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be greater than or equal to 1']
+2026-07-10 14:59:01 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.003s
+2026-07-10 14:59:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 14:59:01 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'less_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be less than or equal to 100', 'input': '500', 'ctx': {'le': 100}}]
+2026-07-10 14:59:01 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be less than or equal to 100']
+2026-07-10 14:59:01 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.009s
+2026-07-10 14:59:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-07-10 14:59:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.008s
+2026-07-10 15:06:51 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 15:06:52 | [32mINFO[0m | app | device_token_service.py:26 | register() | Jeton push enregistré pour user 1 (android)
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:52 | [32mINFO[0m | app | dispatcher.py:82 | dispatch() | 1 jeton(s) push désactivé(s) (DeviceNotRegistered)
+2026-07-10 15:06:52 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:06:53 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Paiement reçu
+2026-07-10 15:06:53 | [31mERROR[0m | app | notification_service.py:122 | _send_notification_push() | Erreur envoi push: Expo injoignable
+2026-07-10 15:07:26 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 15:07:26 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:07:26 | [31mERROR[0m | app | notification_service.py:112 | create_notification() | Erreur create_notification: (sqlite3.IntegrityError) UNIQUE constraint failed: notifications.user_id, notifications.event_key
+[SQL: INSERT INTO notifications (user_id, type, title, message, data, event_key, is_read, read_at, action_url, action_label, expires_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: (1, 'ORDER_SHIPPED', 'Commande expédiée', '…', '{}', 'order:123:shipped', 0, None, None, None, '2026-08-09 15:07:26.850813')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-07-10 15:08:04 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 15:08:05 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:08:22 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-10 15:08:23 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-10 15:08:23 | [32mINFO[0m | app | cart_service.py:111 | add_to_cart() | Quantité mise à jour dans le panier: 5
+2026-07-10 15:08:23 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-10 15:08:23 | [32mINFO[0m | app | device_token_service.py:26 | register() | Jeton push enregistré pour user 1 (android)
+2026-07-10 15:08:23 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | dispatcher.py:82 | dispatch() | 1 jeton(s) push désactivé(s) (DeviceNotRegistered)
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: t
+2026-07-10 15:08:24 | [32mINFO[0m | app | notification_service.py:97 | create_notification() | Notification créée pour user 1: Paiement reçu
+2026-07-10 15:08:24 | [31mERROR[0m | app | notification_service.py:122 | _send_notification_push() | Erreur envoi push: Expo injoignable
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:24 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.010s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.010s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.013s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.015s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-10 15:08:25 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.003s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-10 15:08:25 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.004s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-10 15:08:25 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.002s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-10 15:08:25 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.003s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-10 15:08:25 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.003s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.036s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.028s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.038s
+2026-07-10 15:08:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.050s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.033s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.026s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.031s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.031s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.030s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.093s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.041s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.017s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'greater_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be greater than or equal to 1', 'input': '0', 'ctx': {'ge': 1}}]
+2026-07-10 15:08:26 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be greater than or equal to 1']
+2026-07-10 15:08:26 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.007s
+2026-07-10 15:08:26 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-10 15:08:26 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'less_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be less than or equal to 100', 'input': '500', 'ctx': {'le': 100}}]
+2026-07-10 15:08:26 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be less than or equal to 100']
+2026-07-10 15:08:26 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.007s
+2026-07-10 15:08:27 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-07-10 15:08:27 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.024s
+2026-07-10 18:55:34 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs

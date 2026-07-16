@@ -1,0 +1,415 @@
+2026-07-14 14:28:02 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:28:31 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:29:53 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:30:12 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:30:30 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:31:15 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:31:16 | [32mINFO[0m | app | order_service.py:133 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 2
+2026-07-14 14:31:16 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Nouvelle commande reçue
+2026-07-14 14:31:16 | [32mINFO[0m | app | order_service.py:397 | update_order_status() | Statut commande 4: OrderStatus.PENDING -> OrderStatus.CONFIRMED
+2026-07-14 14:31:16 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 2: Commande confirmée
+2026-07-14 14:31:16 | [32mINFO[0m | app | order_service.py:499 | cancel_order() | Commande 4 annulée
+2026-07-14 14:31:16 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 2: Commande annulée
+2026-07-14 14:31:31 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:31:31 | [32mINFO[0m | app | order_service.py:133 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 2
+2026-07-14 14:31:31 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Nouvelle commande reçue
+2026-07-14 14:31:31 | [32mINFO[0m | app | order_service.py:397 | update_order_status() | Statut commande 5: OrderStatus.PENDING -> OrderStatus.CONFIRMED
+2026-07-14 14:31:31 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 2: Commande confirmée
+2026-07-14 14:31:31 | [32mINFO[0m | app | order_service.py:499 | cancel_order() | Commande 5 annulée
+2026-07-14 14:31:31 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 2: Commande annulée
+2026-07-14 14:32:56 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:42:02 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:42:37 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:48:34 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:48:53 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:48:57 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:48:59 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-14 14:48:59 | [32mINFO[0m | app | cart_service.py:111 | add_to_cart() | Quantité mise à jour dans le panier: 5
+2026-07-14 14:48:59 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-14 14:49:00 | [32mINFO[0m | app | device_token_service.py:26 | register() | Jeton push enregistré pour user 1 (android)
+2026-07-14 14:49:00 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-14 14:49:00 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-14 14:49:00 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-14 14:49:00 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Commande expédiée
+2026-07-14 14:49:00 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Alerte
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:01 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:02 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:02 | [32mINFO[0m | app | dispatcher.py:82 | dispatch() | 1 jeton(s) push désactivé(s) (DeviceNotRegistered)
+2026-07-14 14:49:02 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: t
+2026-07-14 14:49:02 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Paiement reçu
+2026-07-14 14:49:02 | [31mERROR[0m | app | notification_service.py:154 | _send_notification_push() | Erreur envoi push: Expo injoignable
+2026-07-14 14:49:02 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:02 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:02 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:02 | [32mINFO[0m | app | product_service.py:209 | update() | Produit mis à jour - ID: 1
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:256 | delete() | Produit supprimé - ID: 1
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:376 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:03 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:03 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-14 14:49:03 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-14 14:49:03 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.068s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.013s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.016s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.013s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-14 14:49:04 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.006s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-14 14:49:04 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.005s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-14 14:49:04 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.002s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-14 14:49:04 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.002s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-14 14:49:04 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.003s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.045s
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.043s
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.037s
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.074s
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.046s
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.039s
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.038s
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.045s
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:05 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.039s
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.090s
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.049s
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [200] 0.021s
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:06 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'greater_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be greater than or equal to 1', 'input': '0', 'ctx': {'ge': 1}}]
+2026-07-14 14:49:06 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be greater than or equal to 1']
+2026-07-14 14:49:06 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.028s
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-14 14:49:06 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'less_than_equal', 'loc': ('query', 'limit'), 'msg': 'Input should be less than or equal to 100', 'input': '500', 'ctx': {'le': 100}}]
+2026-07-14 14:49:06 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['query -> limit: Input should be less than or equal to 100']
+2026-07-14 14:49:06 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [422] 0.008s
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-07-14 14:49:06 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.022s
+2026-07-14 14:57:09 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 14:57:10 | [32mINFO[0m | app | order_service.py:130 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 2
+2026-07-14 14:57:10 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Nouvelle commande reçue
+2026-07-14 14:57:10 | [32mINFO[0m | app | order_service.py:642 | cancel_order() | Commande 6 annulée
+2026-07-14 14:57:10 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Commande annulée
+2026-07-14 14:59:35 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 18:38:20 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 18:38:25 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 18:40:28 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 18:40:29 | [32mINFO[0m | app | address_service.py:39 | create() | Adresse 1 créée pour user 2
+2026-07-14 18:40:29 | [32mINFO[0m | app | address_service.py:39 | create() | Adresse 2 créée pour user 2
+2026-07-14 18:40:29 | [32mINFO[0m | app | order_service.py:139 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 2
+2026-07-14 18:40:29 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Nouvelle commande reçue
+2026-07-14 18:40:55 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 18:40:56 | [32mINFO[0m | app | address_service.py:39 | create() | Adresse 3 créée pour user 2
+2026-07-14 18:40:56 | [32mINFO[0m | app | address_service.py:39 | create() | Adresse 4 créée pour user 2
+2026-07-14 18:40:56 | [32mINFO[0m | app | order_service.py:139 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 2
+2026-07-14 18:40:56 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Nouvelle commande reçue
+2026-07-14 18:40:56 | [32mINFO[0m | app | order_service.py:673 | cancel_order() | Commande 8 annulée
+2026-07-14 18:40:56 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Commande annulée
+2026-07-14 18:40:56 | [32mINFO[0m | app | address_service.py:87 | delete() | Adresse 4 supprimée pour user 2
+2026-07-14 18:40:56 | [32mINFO[0m | app | address_service.py:87 | delete() | Adresse 3 supprimée pour user 2
+2026-07-14 18:41:22 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 18:41:23 | [32mINFO[0m | app | address_service.py:87 | delete() | Adresse 2 supprimée pour user 2
+2026-07-14 18:41:23 | [32mINFO[0m | app | address_service.py:87 | delete() | Adresse 1 supprimée pour user 2
+2026-07-14 18:41:23 | [32mINFO[0m | app | address_service.py:39 | create() | Adresse 5 créée pour user 2
+2026-07-14 18:41:23 | [32mINFO[0m | app | address_service.py:39 | create() | Adresse 6 créée pour user 2
+2026-07-14 18:41:23 | [32mINFO[0m | app | order_service.py:139 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 2
+2026-07-14 18:41:23 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Nouvelle commande reçue
+2026-07-14 18:41:23 | [32mINFO[0m | app | order_service.py:673 | cancel_order() | Commande 9 annulée
+2026-07-14 18:41:23 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 1: Commande annulée
+2026-07-14 18:41:23 | [32mINFO[0m | app | address_service.py:87 | delete() | Adresse 6 supprimée pour user 2
+2026-07-14 18:41:23 | [32mINFO[0m | app | address_service.py:87 | delete() | Adresse 5 supprimée pour user 2
+2026-07-14 18:56:30 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:09:54 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:10:41 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:10:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:10:41 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'missing', 'loc': ('body', 'contact_person'), 'msg': 'Field required', 'input': {'email': 'seller_642c3663@t.io', 'password': 'Passw0rd!23', 'confirm_password': 'Passw0rd!23', 'first_name': 'T', 'last_name': 'Est', 'phone': '0700000000', 'user_type': 'buyer', 'company_name': 'Co 642c3663'}}, {'type': 'missing', 'loc': ('body', 'city'), 'msg': 'Field required', 'input': {'email': 'seller_642c3663@t.io', 'password': 'Passw0rd!23', 'confirm_password': 'Passw0rd!23', 'first_name': 'T', 'last_name': 'Est', 'phone': '0700000000', 'user_type': 'buyer', 'company_name': 'Co 642c3663'}}]
+2026-07-14 19:10:41 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['body -> contact_person: Field required', 'body -> city: Field required']
+2026-07-14 19:10:41 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [422] 0.140s
+2026-07-14 19:11:34 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:11:35 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:11:35 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: seller_55bbe40d@t.io
+2026-07-14 19:11:35 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: seller_55bbe40d@t.io
+2026-07-14 19:11:35 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 17
+2026-07-14 19:11:35 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 17: ['buyer']
+2026-07-14 19:11:35 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 17
+2026-07-14 19:11:35 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 17 inscrit avec succès
+2026-07-14 19:11:41 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à seller_55bbe40d@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à seller_55bbe40d@t.io
+2026-07-14 19:11:41 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 5.924s
+2026-07-14 19:11:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: seller_55bbe40d@t.io
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: seller_55bbe40d@t.io
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 17 connecté avec succès
+2026-07-14 19:11:41 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.232s
+2026-07-14 19:11:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: buyer_55bbe40d@t.io
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: buyer_55bbe40d@t.io
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 18
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 18: ['buyer']
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 18
+2026-07-14 19:11:41 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 18 inscrit avec succès
+2026-07-14 19:11:45 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à buyer_55bbe40d@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:11:45 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à buyer_55bbe40d@t.io
+2026-07-14 19:11:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 4.006s
+2026-07-14 19:11:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:11:45 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: buyer_55bbe40d@t.io
+2026-07-14 19:11:45 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: buyer_55bbe40d@t.io
+2026-07-14 19:11:45 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 18 connecté avec succès
+2026-07-14 19:11:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.256s
+2026-07-14 19:11:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/users/me/roles/supplier
+2026-07-14 19:11:45 | [32mINFO[0m | app | users.py:107 | become_supplier() | User 17 a ouvert un espace vendeur — rôles: ['buyer', 'supplier']
+2026-07-14 19:11:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/users/me/roles/supplier [201] 0.043s
+2026-07-14 19:11:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-14 19:11:45 | [33mWARNING[0m | app | exception_middleware.py:76 | validation_error_handler() | Validation échouée: Le slug du produit est obligatoire, La catégorie est obligatoire
+2026-07-14 19:11:45 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [400] 0.009s
+2026-07-14 19:12:17 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:12:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:12:17 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: seller_368c5eaa@t.io
+2026-07-14 19:12:17 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: seller_368c5eaa@t.io
+2026-07-14 19:12:17 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 19
+2026-07-14 19:12:17 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 19: ['buyer']
+2026-07-14 19:12:17 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 19
+2026-07-14 19:12:17 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 19 inscrit avec succès
+2026-07-14 19:12:22 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à seller_368c5eaa@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:12:22 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à seller_368c5eaa@t.io
+2026-07-14 19:12:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 5.125s
+2026-07-14 19:12:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:12:22 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: seller_368c5eaa@t.io
+2026-07-14 19:12:22 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: seller_368c5eaa@t.io
+2026-07-14 19:12:22 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 19 connecté avec succès
+2026-07-14 19:12:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.267s
+2026-07-14 19:12:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:12:22 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: buyer_368c5eaa@t.io
+2026-07-14 19:12:22 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: buyer_368c5eaa@t.io
+2026-07-14 19:12:23 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 20
+2026-07-14 19:12:23 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 20: ['buyer']
+2026-07-14 19:12:23 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 20
+2026-07-14 19:12:23 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 20 inscrit avec succès
+2026-07-14 19:12:27 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à buyer_368c5eaa@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:12:27 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à buyer_368c5eaa@t.io
+2026-07-14 19:12:27 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 5.065s
+2026-07-14 19:12:27 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:12:27 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: buyer_368c5eaa@t.io
+2026-07-14 19:12:27 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: buyer_368c5eaa@t.io
+2026-07-14 19:12:28 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 20 connecté avec succès
+2026-07-14 19:12:28 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.235s
+2026-07-14 19:12:28 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/users/me/roles/supplier
+2026-07-14 19:12:28 | [32mINFO[0m | app | users.py:107 | become_supplier() | User 19 a ouvert un espace vendeur — rôles: ['buyer', 'supplier']
+2026-07-14 19:12:28 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/users/me/roles/supplier [201] 0.019s
+2026-07-14 19:12:28 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-14 19:12:28 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [403] 0.002s
+2026-07-14 19:12:39 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:12:39 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:12:39 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: seller_2685f630@t.io
+2026-07-14 19:12:39 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: seller_2685f630@t.io
+2026-07-14 19:12:40 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 21
+2026-07-14 19:12:40 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 21: ['buyer']
+2026-07-14 19:12:40 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 21
+2026-07-14 19:12:40 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 21 inscrit avec succès
+2026-07-14 19:12:45 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à seller_2685f630@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à seller_2685f630@t.io
+2026-07-14 19:12:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 5.279s
+2026-07-14 19:12:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: seller_2685f630@t.io
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: seller_2685f630@t.io
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 21 connecté avec succès
+2026-07-14 19:12:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.288s
+2026-07-14 19:12:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: buyer_2685f630@t.io
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: buyer_2685f630@t.io
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 22
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 22: ['buyer']
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 22
+2026-07-14 19:12:45 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 22 inscrit avec succès
+2026-07-14 19:12:49 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à buyer_2685f630@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:12:49 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à buyer_2685f630@t.io
+2026-07-14 19:12:49 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 4.539s
+2026-07-14 19:12:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:12:49 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: buyer_2685f630@t.io
+2026-07-14 19:12:49 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: buyer_2685f630@t.io
+2026-07-14 19:12:50 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 22 connecté avec succès
+2026-07-14 19:12:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.252s
+2026-07-14 19:12:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/users/me/roles/supplier
+2026-07-14 19:12:50 | [32mINFO[0m | app | users.py:107 | become_supplier() | User 21 a ouvert un espace vendeur — rôles: ['buyer', 'supplier']
+2026-07-14 19:12:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/users/me/roles/supplier [201] 0.022s
+2026-07-14 19:12:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-14 19:12:50 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [403] 0.003s
+2026-07-14 19:13:11 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:13:12 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:13:12 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: seller_b36a3bbc@t.io
+2026-07-14 19:13:12 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: seller_b36a3bbc@t.io
+2026-07-14 19:13:12 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 23
+2026-07-14 19:13:12 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 23: ['buyer']
+2026-07-14 19:13:12 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 23
+2026-07-14 19:13:12 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 23 inscrit avec succès
+2026-07-14 19:13:18 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à seller_b36a3bbc@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à seller_b36a3bbc@t.io
+2026-07-14 19:13:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 6.059s
+2026-07-14 19:13:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: seller_b36a3bbc@t.io
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: seller_b36a3bbc@t.io
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 23 connecté avec succès
+2026-07-14 19:13:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.283s
+2026-07-14 19:13:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: buyer_b36a3bbc@t.io
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:269 | register_user() | Tentative d'inscription: buyer_b36a3bbc@t.io
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:286 | register_user() | User créé avec ID: 24
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:290 | register_user() | Rôles attribués à user 24: ['buyer']
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:300 | register_user() | Profil entreprise créé pour user 24
+2026-07-14 19:13:18 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Utilisateur 24 inscrit avec succès
+2026-07-14 19:13:22 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à buyer_b36a3bbc@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 19:13:22 | [32mINFO[0m | app | auth_service.py:316 | register_user() | Email de vérification envoyé à buyer_b36a3bbc@t.io
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 4.213s
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 19:13:22 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: buyer_b36a3bbc@t.io
+2026-07-14 19:13:22 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: buyer_b36a3bbc@t.io
+2026-07-14 19:13:22 | [32mINFO[0m | app | auth_service.py:366 | authenticate_user() | Utilisateur 24 connecté avec succès
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.248s
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/users/me/roles/supplier
+2026-07-14 19:13:22 | [32mINFO[0m | app | users.py:107 | become_supplier() | User 23 a ouvert un espace vendeur — rôles: ['buyer', 'supplier']
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/users/me/roles/supplier [201] 0.017s
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-14 19:13:22 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 18, SKU: None
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [201] 0.054s
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/cart/items
+2026-07-14 19:13:22 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 18 ajouté au panier
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/cart/items [201] 0.032s
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/orders/quote
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/orders/quote [200] 0.009s
+2026-07-14 19:13:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/addresses
+2026-07-14 19:13:23 | [32mINFO[0m | app | address_service.py:39 | create() | Adresse 38 créée pour user 24
+2026-07-14 19:13:23 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/addresses [201] 0.040s
+2026-07-14 19:13:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/orders
+2026-07-14 19:13:23 | [32mINFO[0m | app | order_service.py:139 | create_order_from_cart() | 1 commande(s) créée(s) pour utilisateur 24
+2026-07-14 19:13:23 | [32mINFO[0m | app | notification_service.py:129 | create_notification() | Notification créée pour user 23: Nouvelle commande reçue
+2026-07-14 19:13:23 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/orders [201] 0.116s
+2026-07-14 19:13:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/cart/items
+2026-07-14 19:13:23 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 18 ajouté au panier
+2026-07-14 19:13:23 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/cart/items [201] 0.011s
+2026-07-14 19:13:23 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/orders
+2026-07-14 19:13:23 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'value_error', 'loc': ('body',), 'msg': 'Value error, Choisissez un opérateur mobile money', 'input': {'address_id': 38, 'payment_method': 'mobile_money'}, 'ctx': {'error': ValueError('Choisissez un opérateur mobile money')}}]
+2026-07-14 19:13:23 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['body: Value error, Choisissez un opérateur mobile money']
+2026-07-14 19:13:23 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/orders [422] 0.004s
+2026-07-14 19:40:51 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:50:48 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:51:38 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:58:29 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:58:43 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:59:19 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 19:59:52 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 20:00:32 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 20:01:09 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-14 20:01:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-07-14 20:01:09 | [32mINFO[0m | app | auth.py:52 | register() | Requête d'inscription: reset_9172de49@t.io
+2026-07-14 20:01:09 | [32mINFO[0m | app | auth_service.py:281 | register_user() | Tentative d'inscription: reset_9172de49@t.io
+2026-07-14 20:01:09 | [32mINFO[0m | app | auth_service.py:298 | register_user() | User créé avec ID: 25
+2026-07-14 20:01:09 | [32mINFO[0m | app | auth_service.py:302 | register_user() | Rôles attribués à user 25: ['buyer']
+2026-07-14 20:01:09 | [32mINFO[0m | app | auth_service.py:312 | register_user() | Profil entreprise créé pour user 25
+2026-07-14 20:01:09 | [32mINFO[0m | app | auth_service.py:314 | register_user() | Utilisateur 25 inscrit avec succès
+2026-07-14 20:01:15 | [32mINFO[0m | app | email_services_v2.py:96 | send_email_with_template() | ✉️ Email template envoyé à reset_9172de49@t.io: Vérifiez votre email - MarketPlace B2B
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth_service.py:328 | register_user() | Email de vérification envoyé à reset_9172de49@t.io
+2026-07-14 20:01:15 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 6.032s
+2026-07-14 20:01:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/forgot-password
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth.py:152 | forgot_password() | Requête forgot-password: reset_9172de49@t.io
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth_service.py:519 | forgot_password() | Demande de réinitialisation mot de passe: reset_9172de49@t.io
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth_service.py:554 | forgot_password() | Code de réinitialisation envoyé à reset_9172de49@t.io
+2026-07-14 20:01:15 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/forgot-password [200] 0.213s
+2026-07-14 20:01:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/forgot-password
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth.py:152 | forgot_password() | Requête forgot-password: inconnu_9172de49@t.io
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth_service.py:519 | forgot_password() | Demande de réinitialisation mot de passe: inconnu_9172de49@t.io
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth_service.py:533 | forgot_password() | Email non trouvé: inconnu_9172de49@t.io - réponse générique envoyée
+2026-07-14 20:01:15 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/forgot-password [200] 0.004s
+2026-07-14 20:01:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:15 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:15 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.237s
+2026-07-14 20:01:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:15 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth_service.py:634 | verify_reset_code() | Code de réinitialisation validé pour l'utilisateur 25
+2026-07-14 20:01:16 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [200] 0.214s
+2026-07-14 20:01:16 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:16 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:16 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.005s
+2026-07-14 20:01:16 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/reset-password
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth.py:197 | reset_password() | Requête reset-password
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth_service.py:657 | reset_password() | Tentative de réinitialisation de mot de passe
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth_service.py:698 | reset_password() | Mot de passe réinitialisé pour user 25
+2026-07-14 20:01:16 | [31mERROR[0m | app | email_services_v2.py:50 | render_template() | Erreur rendu template password_changed.html: block 'header_title' defined twice
+2026-07-14 20:01:16 | [31mERROR[0m | app | email_services_v2.py:100 | send_email_with_template() | ❌ Erreur envoi email template: block 'header_title' defined twice
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth_service.py:720 | reset_password() | Email de confirmation envoyé à reset_9172de49@t.io
+2026-07-14 20:01:16 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/reset-password [200] 0.422s
+2026-07-14 20:01:16 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth.py:76 | login() | Requête de connexion: reset_9172de49@t.io
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth_service.py:353 | authenticate_user() | Tentative de connexion: reset_9172de49@t.io
+2026-07-14 20:01:16 | [33mWARNING[0m | app | auth_service.py:364 | authenticate_user() | Mot de passe incorrect pour: reset_9172de49@t.io
+2026-07-14 20:01:16 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-07-14 20:01:16 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.212s
+2026-07-14 20:01:16 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth.py:76 | login() | Requête de connexion: reset_9172de49@t.io
+2026-07-14 20:01:16 | [32mINFO[0m | app | auth_service.py:353 | authenticate_user() | Tentative de connexion: reset_9172de49@t.io
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth_service.py:378 | authenticate_user() | Utilisateur 25 connecté avec succès
+2026-07-14 20:01:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.233s
+2026-07-14 20:01:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/forgot-password
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth.py:152 | forgot_password() | Requête forgot-password: reset_9172de49@t.io
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth_service.py:519 | forgot_password() | Demande de réinitialisation mot de passe: reset_9172de49@t.io
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth_service.py:554 | forgot_password() | Code de réinitialisation envoyé à reset_9172de49@t.io
+2026-07-14 20:01:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/forgot-password [200] 0.233s
+2026-07-14 20:01:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:17 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.226s
+2026-07-14 20:01:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:17 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.207s
+2026-07-14 20:01:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:17 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.208s
+2026-07-14 20:01:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:17 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:18 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:18 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.211s
+2026-07-14 20:01:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:18 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:18 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:18 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.214s
+2026-07-14 20:01:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/verify-reset-code
+2026-07-14 20:01:18 | [32mINFO[0m | app | auth.py:175 | verify_reset_code() | Requête verify-reset-code
+2026-07-14 20:01:18 | [33mWARNING[0m | app | auth_service.py:619 | verify_reset_code() | Trop de tentatives de code pour l'utilisateur 25
+2026-07-14 20:01:18 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Code invalide ou expiré. Demandez un nouveau code.
+2026-07-14 20:01:18 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/verify-reset-code [401] 0.007s

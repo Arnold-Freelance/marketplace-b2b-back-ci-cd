@@ -1,0 +1,455 @@
+2026-07-07 13:32:18 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:32:45 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:41:06 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:42:58 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:43:10 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:43:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 13:43:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.213s
+2026-07-07 13:43:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 13:43:11 | [31mERROR[0m | app.app.services.base_service | logger.py:205 | wrapper() | ✗ Erreur dans CategoryService.get_by_criteria(): L'ID utilisateur est obligatoire
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\core\logger.py", line 201, in wrapper
+    result = func(self, *args, **kwargs)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 185, in get_by_criteria
+    self._validate_user(request)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 223, in _validate_user
+    raise ValidationError("L'ID utilisateur est obligatoire")
+app.core.exceptions.ValidationError: L'ID utilisateur est obligatoire
+2026-07-07 13:43:11 | [33mWARNING[0m | app | exception_middleware.py:76 | validation_error_handler() | Validation échouée: L'ID utilisateur est obligatoire
+2026-07-07 13:43:11 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [400] 0.023s
+2026-07-07 13:43:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 13:43:11 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.003s
+2026-07-07 13:43:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 13:43:11 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.004s
+2026-07-07 13:43:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 13:43:11 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.003s
+2026-07-07 13:43:33 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:43:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 13:43:33 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.070s
+2026-07-07 13:43:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 13:43:33 | [31mERROR[0m | app.app.services.base_service | logger.py:205 | wrapper() | ✗ Erreur dans CategoryService.get_by_criteria(): L'ID utilisateur est obligatoire
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\core\logger.py", line 201, in wrapper
+    result = func(self, *args, **kwargs)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 185, in get_by_criteria
+    self._validate_user(request)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 223, in _validate_user
+    raise ValidationError("L'ID utilisateur est obligatoire")
+app.core.exceptions.ValidationError: L'ID utilisateur est obligatoire
+2026-07-07 13:43:33 | [33mWARNING[0m | app | exception_middleware.py:76 | validation_error_handler() | Validation échouée: L'ID utilisateur est obligatoire
+2026-07-07 13:43:33 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [400] 0.019s
+2026-07-07 13:43:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 13:43:33 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.005s
+2026-07-07 13:43:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 13:43:33 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.003s
+2026-07-07 13:43:33 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 13:43:33 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.002s
+2026-07-07 13:45:00 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:45:00 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 13:45:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.086s
+2026-07-07 13:45:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 13:45:01 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.012s
+2026-07-07 13:45:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 13:45:01 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.003s
+2026-07-07 13:45:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 13:45:01 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.005s
+2026-07-07 13:45:01 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 13:45:01 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.003s
+2026-07-07 13:45:28 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.063s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.005s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.006s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.009s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 13:45:29 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.002s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 13:45:29 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.002s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 13:45:29 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 13:45:29 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-07 13:45:29 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 13:45:29 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.007s
+2026-07-07 15:14:08 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.067s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.007s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.006s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.006s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 15:14:09 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.001s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 15:14:09 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.001s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 15:14:09 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 15:14:09 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-07 15:14:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 15:14:09 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.001s
+2026-07-07 15:18:43 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:19:01 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:19:02 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:21:16 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:21:44 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.051s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.005s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.005s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.003s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 15:21:44 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.002s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 15:21:44 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.001s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 15:21:44 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 15:21:44 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-07 15:21:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 15:21:44 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.001s
+2026-07-07 15:38:12 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.097s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.004s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.006s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.004s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 15:38:13 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.001s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 15:38:13 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.001s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 15:38:13 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 15:38:13 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-07 15:38:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 15:38:13 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.001s
+2026-07-07 15:57:19 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:58:00 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:01 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-07 15:58:17 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 15:58:18 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-07 15:58:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 15:58:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.015s
+2026-07-07 15:58:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 15:58:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.006s
+2026-07-07 15:58:18 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 15:58:18 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.086s
+2026-07-07 15:58:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 15:58:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.021s
+2026-07-07 15:58:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 15:58:19 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.003s
+2026-07-07 15:58:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 15:58:19 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.002s
+2026-07-07 15:58:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 15:58:19 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 15:58:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 15:58:19 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.002s
+2026-07-07 15:58:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 15:58:19 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.002s
+2026-07-07 15:59:25 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 15:59:29 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 16:06:34 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:06:35 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-07 16:06:35 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 16:06:35 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.017s
+2026-07-07 16:06:35 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 16:06:35 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.011s
+2026-07-07 16:06:35 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.176s
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.012s
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 16:06:36 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.003s
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 16:06:36 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.003s
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 16:06:36 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 16:06:36 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-07 16:06:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 16:06:36 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.002s
+2026-07-07 16:07:58 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:07:59 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 16:07:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:08:00 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:04 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 16:12:24 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 16:12:28 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:28 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:29 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:29 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-07 16:12:29 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:30 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:30 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:12:30 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 16:12:30 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.015s
+2026-07-07 16:12:30 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 16:12:30 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.020s
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.025s
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.025s
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 16:12:31 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.011s
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 16:12:31 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.004s
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 16:12:31 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.002s
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 16:12:31 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.005s
+2026-07-07 16:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 16:12:31 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.004s
+2026-07-07 16:34:39 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 16:34:40 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-07 16:34:40 | [32mINFO[0m | app | cart_service.py:111 | add_to_cart() | Quantité mise à jour dans le panier: 5
+2026-07-07 16:34:40 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-07 16:34:57 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 16:34:58 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-07 16:34:58 | [32mINFO[0m | app | cart_service.py:111 | add_to_cart() | Quantité mise à jour dans le panier: 5
+2026-07-07 16:34:58 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-07 16:34:58 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:58 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:58 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:58 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:59 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:59 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.029s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.007s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.008s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.006s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 16:34:59 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.002s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 16:34:59 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.001s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 16:34:59 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 16:34:59 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-07 16:34:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 16:34:59 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.004s
+2026-07-07 17:08:47 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 17:08:48 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-07 17:08:48 | [32mINFO[0m | app | cart_service.py:111 | add_to_cart() | Quantité mise à jour dans le panier: 5
+2026-07-07 17:08:48 | [32mINFO[0m | app | cart_service.py:121 | add_to_cart() | Produit 1 ajouté au panier
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:190 | update() | Produit mis à jour - ID: 1
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:237 | delete() | Produit supprimé - ID: 1
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:357 | update_stock() | Stock mis à jour pour le produit 1: 50
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | __init__.py:34 | get_storage() | Stockage fichiers: disque local (uploads/)
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_image_service.py:221 | reorder_images() | Images du produit 1 réorganisées
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | product_service.py:123 | create() | Produit créé avec succès - ID: 1, SKU: None
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.005s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.006s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.004s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.005s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/products
+2026-07-07 17:08:49 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/products [401] 0.004s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/categories
+2026-07-07 17:08:49 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/categories [401] 0.001s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/cart
+2026-07-07 17:08:49 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/cart [401] 0.001s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/1/primary
+2026-07-07 17:08:49 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/1/primary [401] 0.001s
+2026-07-07 17:08:49 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PUT /api/v1/products/1/images/order
+2026-07-07 17:08:49 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PUT /api/v1/products/1/images/order [401] 0.003s
+2026-07-07 18:43:53 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 18:43:54 | [32mINFO[0m | app | main_new.py:44 | lifespan() | 🚀 Démarrage de l'application...
+2026-07-07 23:36:53 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 23:39:55 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 23:39:59 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 23:40:35 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-07-07 23:40:36 | [32mINFO[0m | app | main_new.py:44 | lifespan() | 🚀 Démarrage de l'application...
+2026-07-07 23:41:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /health
+2026-07-07 23:41:14 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /health [200] 0.425s
+2026-07-07 23:41:14 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /health
+2026-07-07 23:41:14 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /health [200] 0.016s
+2026-07-07 23:41:14 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 23:41:15 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.751s
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/categories
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/categories [200] 0.003s
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.001s
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.263s
+2026-07-07 23:44:25 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.258s
+2026-07-07 23:57:55 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /health
+2026-07-07 23:57:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /health [200] 0.022s
+2026-07-08 00:03:20 | [32mINFO[0m | app | main_new.py:53 | lifespan() | 🛑 Arrêt de l'application...
+2026-07-08 00:56:02 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /health
+2026-07-08 00:56:02 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /health [200] 0.261s
+2026-07-08 01:01:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /health
+2026-07-08 01:01:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /health [200] 0.021s
+2026-07-08 01:03:03 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 01:03:03 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.354s
+2026-07-08 01:03:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-08 01:03:04 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.026s
+2026-07-08 01:03:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products/featured
+2026-07-08 01:03:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products/featured [200] 0.002s
+2026-07-08 01:03:59 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-08 01:03:59 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.061s
+2026-07-08 01:04:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-08 01:04:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.031s
+2026-07-08 01:04:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products/4
+2026-07-08 01:04:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products/4 [200] 0.006s
+2026-07-08 01:04:52 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/4
+2026-07-08 01:04:52 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/4 [200] 0.057s
+2026-07-08 01:08:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/auth/login
+2026-07-08 01:08:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/auth/login [200] 0.008s
+2026-07-08 01:08:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-08 01:08:38 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: test@gmail.com
+2026-07-08 01:08:38 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: test@gmail.com
+2026-07-08 01:08:38 | [33mWARNING[0m | app | auth_service.py:347 | authenticate_user() | Utilisateur non trouvé: test@gmail.com
+2026-07-08 01:08:38 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-07-08 01:08:38 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.122s
+2026-07-08 01:54:32 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/auth/login
+2026-07-08 01:54:32 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/auth/login [200] 0.032s
+2026-07-08 01:54:32 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-08 01:54:32 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: test@gmail.com
+2026-07-08 01:54:32 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: test@gmail.com
+2026-07-08 01:54:32 | [33mWARNING[0m | app | auth_service.py:347 | authenticate_user() | Utilisateur non trouvé: test@gmail.com
+2026-07-08 01:54:32 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-07-08 01:54:32 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.073s
+2026-07-08 01:55:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-08 01:55:10 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: test@gmail.com
+2026-07-08 01:55:10 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: test@gmail.com
+2026-07-08 01:55:10 | [33mWARNING[0m | app | auth_service.py:347 | authenticate_user() | Utilisateur non trouvé: test@gmail.com
+2026-07-08 01:55:10 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-07-08 01:55:10 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.029s
+2026-07-08 02:00:05 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-07-08 02:00:05 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: test@gmail.com
+2026-07-08 02:00:05 | [32mINFO[0m | app | auth_service.py:341 | authenticate_user() | Tentative de connexion: test@gmail.com
+2026-07-08 02:00:05 | [33mWARNING[0m | app | auth_service.py:347 | authenticate_user() | Utilisateur non trouvé: test@gmail.com
+2026-07-08 02:00:05 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Identifiant ou mot de passe incorrect
+2026-07-08 02:00:05 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [401] 0.073s
+2026-07-08 03:11:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-08 03:11:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/categories
+2026-07-08 03:11:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.050s
+2026-07-08 03:11:50 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/categories [200] 0.015s
+2026-07-08 03:11:50 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 03:11:51 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-07-08 03:11:51 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.444s
+2026-07-08 03:11:51 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.057s
+2026-07-08 03:12:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products/featured
+2026-07-08 03:12:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products/featured [200] 0.003s
+2026-07-08 03:12:19 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-07-08 03:12:19 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.082s
+2026-07-08 03:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-08 03:12:31 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.003s
+2026-07-08 03:12:31 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 03:12:31 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.124s
+2026-07-08 03:12:34 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-08 03:12:34 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.003s
+2026-07-08 03:12:34 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 03:12:34 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.049s
+2026-07-08 03:12:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-08 03:12:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.003s
+2026-07-08 03:12:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 03:12:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.041s
+2026-07-08 03:12:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-08 03:12:38 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.003s
+2026-07-08 03:12:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 03:12:39 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.055s
+2026-07-08 03:12:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-08 03:12:41 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.004s
+2026-07-08 03:12:41 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 03:12:42 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.044s
+2026-07-08 03:12:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → OPTIONS /api/v1/products
+2026-07-08 03:12:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← OPTIONS /api/v1/products [200] 0.003s
+2026-07-08 03:12:45 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 03:12:45 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.041s
+2026-07-08 13:11:40 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /health
+2026-07-08 13:11:40 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /health [200] 0.061s
+2026-07-08 13:11:40 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /health
+2026-07-08 13:11:40 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /health [200] 0.004s
+2026-07-08 13:11:40 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers
+2026-07-08 13:11:40 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers [404] 0.008s
+2026-07-08 13:12:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/1
+2026-07-08 13:12:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/1 [200] 0.169s
+2026-07-08 13:12:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/suppliers/
+2026-07-08 13:12:37 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/suppliers/ [404] 0.001s
+2026-07-08 13:12:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products
+2026-07-08 13:12:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products [200] 0.123s

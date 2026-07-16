@@ -1,0 +1,33 @@
+2025-10-19 22:59:54 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2025-10-19 22:59:54 | DEBUG    | app | logger.py:291 | <module>() | Message de debug
+2025-10-19 22:59:54 | [32mINFO[0m | app | logger.py:292 | <module>() | Message d'information
+2025-10-19 22:59:54 | [33mWARNING[0m | app | logger.py:293 | <module>() | Message d'avertissement
+2025-10-19 22:59:54 | [31mERROR[0m | app | logger.py:294 | <module>() | Message d'erreur
+2025-10-19 22:59:54 | [35mCRITICAL[0m | app | logger.py:295 | <module>() | Message critique
+2025-10-19 22:59:54 | DEBUG    | app.__main__ | logger.py:161 | wrapper() | ▶ Début exécution: test_function()
+2025-10-19 22:59:54 | [32mINFO[0m | app | logger.py:301 | test_function() | Fonction de test
+2025-10-19 22:59:54 | DEBUG    | app.__main__ | logger.py:165 | wrapper() | ✓ Fin exécution: test_function()
+2025-10-19 22:59:54 | DEBUG    | app | logger.py:233 | __enter__() | ⏱ Début: Opération test
+2025-10-19 22:59:54 | [32mINFO[0m | app | logger.py:241 | __exit__() | ✓ Opération test terminé en 0.100s
+2025-10-19 23:05:46 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2025-10-19 23:05:46 | [32mINFO[0m | app | logger.py:291 | <module>() | Message de debug ne marche
+2025-10-19 23:05:46 | [32mINFO[0m | app | logger.py:292 | <module>() | Message d'information
+2025-10-19 23:05:46 | [33mWARNING[0m | app | logger.py:293 | <module>() | Message d'avertissement
+2025-10-19 23:05:46 | [31mERROR[0m | app | logger.py:294 | <module>() | Message d'erreur
+2025-10-19 23:05:46 | [35mCRITICAL[0m | app | logger.py:295 | <module>() | Message critique
+2025-10-19 23:05:46 | DEBUG    | app.__main__ | logger.py:161 | wrapper() | ▶ Début exécution: test_function()
+2025-10-19 23:05:46 | [32mINFO[0m | app | logger.py:301 | test_function() | Fonction de test
+2025-10-19 23:05:46 | DEBUG    | app.__main__ | logger.py:165 | wrapper() | ✓ Fin exécution: test_function()
+2025-10-19 23:05:46 | DEBUG    | app | logger.py:233 | __enter__() | ⏱ Début: Opération test
+2025-10-19 23:05:46 | [32mINFO[0m | app | logger.py:241 | __exit__() | ✓ Opération test terminé en 0.100s
+2025-10-19 23:06:26 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2025-10-19 23:06:26 | DEBUG    | app | logger.py:291 | <module>() | Message de debug
+2025-10-19 23:06:26 | [32mINFO[0m | app | logger.py:292 | <module>() | Message d'information
+2025-10-19 23:06:26 | [33mWARNING[0m | app | logger.py:293 | <module>() | Message d'avertissement
+2025-10-19 23:06:26 | [31mERROR[0m | app | logger.py:294 | <module>() | Message d'erreur
+2025-10-19 23:06:26 | [35mCRITICAL[0m | app | logger.py:295 | <module>() | Message critique
+2025-10-19 23:06:26 | DEBUG    | app.__main__ | logger.py:161 | wrapper() | ▶ Début exécution: test_function()
+2025-10-19 23:06:26 | [32mINFO[0m | app | logger.py:301 | test_function() | Fonction de test
+2025-10-19 23:06:26 | DEBUG    | app.__main__ | logger.py:165 | wrapper() | ✓ Fin exécution: test_function()
+2025-10-19 23:06:26 | DEBUG    | app | logger.py:233 | __enter__() | ⏱ Début: Opération test
+2025-10-19 23:06:26 | [32mINFO[0m | app | logger.py:241 | __exit__() | ✓ Opération test terminé en 0.101s

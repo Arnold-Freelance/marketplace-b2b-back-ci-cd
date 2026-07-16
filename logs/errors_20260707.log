@@ -1,0 +1,20 @@
+2026-07-07 13:43:11 | [31mERROR[0m | app.app.services.base_service | logger.py:205 | wrapper() | ✗ Erreur dans CategoryService.get_by_criteria(): L'ID utilisateur est obligatoire
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\core\logger.py", line 201, in wrapper
+    result = func(self, *args, **kwargs)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 185, in get_by_criteria
+    self._validate_user(request)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 223, in _validate_user
+    raise ValidationError("L'ID utilisateur est obligatoire")
+app.core.exceptions.ValidationError: L'ID utilisateur est obligatoire
+2026-07-07 13:43:33 | [31mERROR[0m | app.app.services.base_service | logger.py:205 | wrapper() | ✗ Erreur dans CategoryService.get_by_criteria(): L'ID utilisateur est obligatoire
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\core\logger.py", line 201, in wrapper
+    result = func(self, *args, **kwargs)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 185, in get_by_criteria
+    self._validate_user(request)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 223, in _validate_user
+    raise ValidationError("L'ID utilisateur est obligatoire")
+app.core.exceptions.ValidationError: L'ID utilisateur est obligatoire

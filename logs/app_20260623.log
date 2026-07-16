@@ -1,0 +1,1442 @@
+2026-06-23 12:51:18 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:54:26 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:54:27 | [32mINFO[0m | app | main_new.py:41 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-23 12:54:29 | [32mINFO[0m | app | main_new.py:45 | lifespan() | ✅ Base de données initialisée
+2026-06-23 12:54:30 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:54:36 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:54:37 | [32mINFO[0m | app | main_new.py:41 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-23 12:54:37 | [32mINFO[0m | app | main_new.py:45 | lifespan() | ✅ Base de données initialisée
+2026-06-23 12:54:51 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:55:08 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:55:42 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:55:55 | [32mINFO[0m | app | main_new.py:52 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-23 12:55:56 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 12:55:56 | [32mINFO[0m | app | main_new.py:41 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-23 12:55:56 | [32mINFO[0m | app | main_new.py:45 | lifespan() | ✅ Base de données initialisée
+2026-06-23 17:23:04 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-06-23 17:23:05 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:05 | [32mINFO[0m | app | auth_service.py:224 | register_user() | Tentative d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:05 | [31mERROR[0m | app | user_repo.py:23 | get_by_email() | Erreur get_by_email: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:05 | [31mERROR[0m | app | user_repo.py:33 | get_by_phone() | Erreur get_by_phone: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:05 | [31mERROR[0m | app | exception_middleware.py:167 | sqlalchemy_error_handler() | Erreur SQLAlchemy: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\auth.py", line 51, in register
+    return auth_service.register_user(user_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\auth_service.py", line 233, in register_user
+    user = self.user_repo.create(
+        email=data.email,
+    ...<3 lines>...
+        status="pending"
+    )
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\repositories\base.py", line 73, in create
+    obj = self.entity_cls(**kwargs)
+  File "<string>", line 4, in __init__
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4410, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4218, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:05 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [500] 0.964s
+2026-06-23 17:23:06 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-06-23 17:23:06 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:06 | [32mINFO[0m | app | auth_service.py:224 | register_user() | Tentative d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:06 | [31mERROR[0m | app | user_repo.py:23 | get_by_email() | Erreur get_by_email: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:06 | [31mERROR[0m | app | user_repo.py:33 | get_by_phone() | Erreur get_by_phone: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:07 | [31mERROR[0m | app | exception_middleware.py:167 | sqlalchemy_error_handler() | Erreur SQLAlchemy: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\auth.py", line 51, in register
+    return auth_service.register_user(user_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\auth_service.py", line 233, in register_user
+    user = self.user_repo.create(
+        email=data.email,
+    ...<3 lines>...
+        status="pending"
+    )
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\repositories\base.py", line 73, in create
+    obj = self.entity_cls(**kwargs)
+  File "<string>", line 4, in __init__
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4410, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4218, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:07 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [500] 0.314s
+2026-06-23 17:23:09 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-06-23 17:23:09 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:09 | [32mINFO[0m | app | auth_service.py:224 | register_user() | Tentative d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:09 | [31mERROR[0m | app | user_repo.py:23 | get_by_email() | Erreur get_by_email: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:09 | [31mERROR[0m | app | user_repo.py:33 | get_by_phone() | Erreur get_by_phone: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:09 | [31mERROR[0m | app | exception_middleware.py:167 | sqlalchemy_error_handler() | Erreur SQLAlchemy: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\auth.py", line 51, in register
+    return auth_service.register_user(user_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\auth_service.py", line 233, in register_user
+    user = self.user_repo.create(
+        email=data.email,
+    ...<3 lines>...
+        status="pending"
+    )
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\repositories\base.py", line 73, in create
+    obj = self.entity_cls(**kwargs)
+  File "<string>", line 4, in __init__
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4410, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4218, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:09 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [500] 0.297s
+2026-06-23 17:23:13 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-06-23 17:23:13 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:13 | [32mINFO[0m | app | auth_service.py:224 | register_user() | Tentative d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:23:13 | [31mERROR[0m | app | user_repo.py:23 | get_by_email() | Erreur get_by_email: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:13 | [31mERROR[0m | app | user_repo.py:33 | get_by_phone() | Erreur get_by_phone: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:13 | [31mERROR[0m | app | exception_middleware.py:167 | sqlalchemy_error_handler() | Erreur SQLAlchemy: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\auth.py", line 51, in register
+    return auth_service.register_user(user_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\auth_service.py", line 233, in register_user
+    user = self.user_repo.create(
+        email=data.email,
+    ...<3 lines>...
+        status="pending"
+    )
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\repositories\base.py", line 73, in create
+    obj = self.entity_cls(**kwargs)
+  File "<string>", line 4, in __init__
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\state.py", line 566, in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\event\attr.py", line 497, in __call__
+    fn(*args, **kw)
+    ~~^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4410, in _event_on_init
+    instrumenting_mapper._check_configure()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2401, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4218, in _configure_registries
+    _do_configure_registries(registries, cascade)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4255, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[ConversationEntity(conversations)]'. Original exception was: Mapper 'Mapper[UserEntity(users)]' has no property 'buyer_conversations'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2026-06-23 17:23:13 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [500] 0.267s
+2026-06-23 17:25:36 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 17:26:22 | [32mINFO[0m | app | main_new.py:52 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-23 17:26:24 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 17:26:24 | [32mINFO[0m | app | main_new.py:41 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-23 17:26:24 | [32mINFO[0m | app | main_new.py:45 | lifespan() | ✅ Base de données initialisée
+2026-06-23 17:29:46 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-06-23 17:29:46 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:29:46 | [32mINFO[0m | app | auth_service.py:224 | register_user() | Tentative d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:29:46 | [33mWARNING[0m | app | exception_middleware.py:59 | base_app_exception_handler() | Erreur client: Un utilisateur avec l'email 'abolearnold2102@gmail.com' existe déjà
+2026-06-23 17:29:46 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [409] 0.240s
+2026-06-23 17:44:47 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/register
+2026-06-23 17:44:47 | [32mINFO[0m | app | auth.py:50 | register() | Requête d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:44:47 | [32mINFO[0m | app | auth_service.py:224 | register_user() | Tentative d'inscription: abolearnold2102@gmail.com
+2026-06-23 17:44:48 | [32mINFO[0m | app | auth_service.py:241 | register_user() | User créé avec ID: 15
+2026-06-23 17:44:50 | [32mINFO[0m | app | auth_service.py:251 | register_user() | Profil entreprise créé pour user 15
+2026-06-23 17:44:50 | [32mINFO[0m | app | auth_service.py:253 | register_user() | Utilisateur 15 inscrit avec succès
+2026-06-23 17:44:55 | [32mINFO[0m | app | email_services_v2.py:95 | send_email_with_template() | ✉️ Email template envoyé à abolearnold2102@gmail.com: Vérifiez votre email - MarketPlace B2B
+2026-06-23 17:44:55 | [32mINFO[0m | app | auth_service.py:267 | register_user() | Email de vérification envoyé à abolearnold2102@gmail.com
+2026-06-23 17:44:55 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/register [201] 7.319s
+2026-06-23 17:45:42 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → POST /api/v1/auth/login
+2026-06-23 17:45:42 | [32mINFO[0m | app | auth.py:74 | login() | Requête de connexion: abolearnold2102@gmail.com
+2026-06-23 17:45:42 | [32mINFO[0m | app | auth_service.py:292 | authenticate_user() | Tentative de connexion: abolearnold2102@gmail.com
+2026-06-23 17:45:42 | [32mINFO[0m | app | auth_service.py:315 | authenticate_user() | Utilisateur 15 connecté avec succès
+2026-06-23 17:45:42 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← POST /api/v1/auth/login [200] 0.379s
+2026-06-23 17:45:43 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 17:45:43 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'featured'}]
+2026-06-23 17:45:43 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 17:45:43 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 17:45:43 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [422] 0.025s
+2026-06-23 17:45:43 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'recent'}]
+2026-06-23 17:45:43 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 17:45:43 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [422] 0.006s
+2026-06-23 17:45:43 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-23 17:45:43 | [31mERROR[0m | app.app.services.base_service | logger.py:205 | wrapper() | ✗ Erreur dans CategoryService.get_by_criteria(): L'ID utilisateur est obligatoire
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\core\logger.py", line 201, in wrapper
+    result = func(self, *args, **kwargs)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 185, in get_by_criteria
+    self._validate_user(request)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 223, in _validate_user
+    raise ValidationError("L'ID utilisateur est obligatoire")
+app.core.exceptions.ValidationError: L'ID utilisateur est obligatoire
+2026-06-23 17:45:43 | [33mWARNING[0m | app | exception_middleware.py:76 | validation_error_handler() | Validation échouée: L'ID utilisateur est obligatoire
+2026-06-23 17:45:43 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [400] 0.011s
+2026-06-23 17:47:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 17:47:17 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'featured'}]
+2026-06-23 17:47:17 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 17:47:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [422] 0.004s
+2026-06-23 17:47:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 17:47:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-23 17:47:17 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'recent'}]
+2026-06-23 17:47:17 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 17:47:17 | [31mERROR[0m | app.app.services.base_service | logger.py:205 | wrapper() | ✗ Erreur dans CategoryService.get_by_criteria(): L'ID utilisateur est obligatoire
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\core\logger.py", line 201, in wrapper
+    result = func(self, *args, **kwargs)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 185, in get_by_criteria
+    self._validate_user(request)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 223, in _validate_user
+    raise ValidationError("L'ID utilisateur est obligatoire")
+app.core.exceptions.ValidationError: L'ID utilisateur est obligatoire
+2026-06-23 17:47:17 | [33mWARNING[0m | app | exception_middleware.py:76 | validation_error_handler() | Validation échouée: L'ID utilisateur est obligatoire
+2026-06-23 17:47:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [422] 0.010s
+2026-06-23 17:47:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [400] 0.010s
+2026-06-23 17:48:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 17:48:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 17:48:21 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'featured'}]
+2026-06-23 17:48:21 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 17:48:21 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'recent'}]
+2026-06-23 17:48:21 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 17:48:21 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [422] 0.009s
+2026-06-23 17:48:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-23 17:48:21 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [422] 0.010s
+2026-06-23 17:48:21 | [31mERROR[0m | app.app.services.base_service | logger.py:205 | wrapper() | ✗ Erreur dans CategoryService.get_by_criteria(): L'ID utilisateur est obligatoire
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\core\logger.py", line 201, in wrapper
+    result = func(self, *args, **kwargs)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 185, in get_by_criteria
+    self._validate_user(request)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\base_service.py", line 223, in _validate_user
+    raise ValidationError("L'ID utilisateur est obligatoire")
+app.core.exceptions.ValidationError: L'ID utilisateur est obligatoire
+2026-06-23 17:48:21 | [33mWARNING[0m | app | exception_middleware.py:76 | validation_error_handler() | Validation échouée: L'ID utilisateur est obligatoire
+2026-06-23 17:48:21 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [400] 0.009s
+2026-06-23 17:48:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/notifications
+2026-06-23 17:48:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → PATCH /api/v1/notifications/read-all
+2026-06-23 17:48:37 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← PATCH /api/v1/notifications/read-all [405] 0.006s
+2026-06-23 17:48:37 | [31mERROR[0m | app | notification_service.py:111 | get_my_notifications() | Erreur get_my_notifications: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:37 | [31mERROR[0m | app | exception_middleware.py:244 | dispatch() | ✗ GET /api/v1/notifications [ERROR] 0.047s - Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:37 | [31mERROR[0m | app | exception_middleware.py:185 | general_exception_handler() | Exception non gérée: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 76, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 177, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    |     await responder(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    |     await self.app(scope, receive, self.send_with_compression)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    |     return service.get_my_notifications(user_id, unread_only, limit, offset)
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    |     raise Exception(f"Erreur: {str(e)}")
+    | Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+    | LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+    |                                                              ^
+    | 
+    | [SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+    | FROM notifications 
+    | WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+    |  LIMIT %(param_1)s OFFSET %(param_2)s]
+    | [parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+    | (Background on this error at: https://sqlalche.me/e/20/f405)
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    await responder(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    await self.app(scope, receive, self.send_with_compression)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    return service.get_my_notifications(user_id, unread_only, limit, offset)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    raise Exception(f"Erreur: {str(e)}")
+Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:38 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/notifications
+2026-06-23 17:48:38 | [31mERROR[0m | app | notification_service.py:111 | get_my_notifications() | Erreur get_my_notifications: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:38 | [31mERROR[0m | app | exception_middleware.py:244 | dispatch() | ✗ GET /api/v1/notifications [ERROR] 0.009s - Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:38 | [31mERROR[0m | app | exception_middleware.py:185 | general_exception_handler() | Exception non gérée: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 76, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 177, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    |     await responder(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    |     await self.app(scope, receive, self.send_with_compression)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    |     return service.get_my_notifications(user_id, unread_only, limit, offset)
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    |     raise Exception(f"Erreur: {str(e)}")
+    | Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+    | LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+    |                                                              ^
+    | 
+    | [SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+    | FROM notifications 
+    | WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+    |  LIMIT %(param_1)s OFFSET %(param_2)s]
+    | [parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+    | (Background on this error at: https://sqlalche.me/e/20/f405)
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    await responder(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    await self.app(scope, receive, self.send_with_compression)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    return service.get_my_notifications(user_id, unread_only, limit, offset)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    raise Exception(f"Erreur: {str(e)}")
+Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:40 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/notifications
+2026-06-23 17:48:40 | [31mERROR[0m | app | notification_service.py:111 | get_my_notifications() | Erreur get_my_notifications: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:40 | [31mERROR[0m | app | exception_middleware.py:244 | dispatch() | ✗ GET /api/v1/notifications [ERROR] 0.007s - Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:40 | [31mERROR[0m | app | exception_middleware.py:185 | general_exception_handler() | Exception non gérée: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 76, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 177, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    |     await responder(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    |     await self.app(scope, receive, self.send_with_compression)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    |     return service.get_my_notifications(user_id, unread_only, limit, offset)
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    |     raise Exception(f"Erreur: {str(e)}")
+    | Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+    | LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+    |                                                              ^
+    | 
+    | [SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+    | FROM notifications 
+    | WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+    |  LIMIT %(param_1)s OFFSET %(param_2)s]
+    | [parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+    | (Background on this error at: https://sqlalche.me/e/20/f405)
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    await responder(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    await self.app(scope, receive, self.send_with_compression)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    return service.get_my_notifications(user_id, unread_only, limit, offset)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    raise Exception(f"Erreur: {str(e)}")
+Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:44 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/notifications
+2026-06-23 17:48:44 | [31mERROR[0m | app | notification_service.py:111 | get_my_notifications() | Erreur get_my_notifications: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:44 | [31mERROR[0m | app | exception_middleware.py:244 | dispatch() | ✗ GET /api/v1/notifications [ERROR] 0.008s - Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:48:44 | [31mERROR[0m | app | exception_middleware.py:185 | general_exception_handler() | Exception non gérée: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 76, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 177, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    |     await responder(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    |     await self.app(scope, receive, self.send_with_compression)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    |     return await call_next(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    |     raise app_exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    |     return service.get_my_notifications(user_id, unread_only, limit, offset)
+    |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    |     raise Exception(f"Erreur: {str(e)}")
+    | Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+    | LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+    |                                                              ^
+    | 
+    | [SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+    | FROM notifications 
+    | WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+    |  LIMIT %(param_1)s OFFSET %(param_2)s]
+    | [parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+    | (Background on this error at: https://sqlalche.me/e/20/f405)
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\exception_middleware.py", line 225, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 29, in __call__
+    await responder(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 126, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\gzip.py", line 46, in __call__
+    await self.app(scope, receive, self.send_with_compression)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\response_middleware.py", line 69, in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 176, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 178, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\middleware\auth_middleware.py", line 134, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 156, in call_next
+    raise app_exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\api\v1\notifications.py", line 38, in list_my_notifications
+    return service.get_my_notifications(user_id, unread_only, limit, offset)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ARABO\Documents\Courses\HK Studio\Project\MarketPlace B2B\Backend\app\services\notification_service.py", line 112, in get_my_notifications
+    raise Exception(f"Erreur: {str(e)}")
+Exception: Erreur: (psycopg2.errors.UndefinedColumn) ERREUR:  la colonne notifications.action_url n'existe pas
+LINE 1: ..., notifications.read_at AS notifications_read_at, notificati...
+                                                             ^
+
+[SQL: SELECT notifications.id AS notifications_id, notifications.user_id AS notifications_user_id, notifications.type AS notifications_type, notifications.title AS notifications_title, notifications.message AS notifications_message, notifications.data AS notifications_data, notifications.is_read AS notifications_is_read, notifications.read_at AS notifications_read_at, notifications.action_url AS notifications_action_url, notifications.action_label AS notifications_action_label, notifications.expires_at AS notifications_expires_at, notifications.created_at AS notifications_created_at 
+FROM notifications 
+WHERE notifications.user_id = %(user_id_1)s ORDER BY notifications.created_at DESC 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'user_id_1': 15, 'param_1': 50, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-23 17:59:32 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 18:01:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:01:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:01:17 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'featured'}]
+2026-06-23 18:01:17 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 18:01:17 | [31mERROR[0m | app | exception_middleware.py:128 | pydantic_validation_handler() | Validation errors: [{'type': 'int_parsing', 'loc': ('path', 'product_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'recent'}]
+2026-06-23 18:01:17 | [33mWARNING[0m | app | exception_middleware.py:129 | pydantic_validation_handler() | Validation Pydantic échouée: ['path -> product_id: Input should be a valid integer, unable to parse string as an integer']
+2026-06-23 18:01:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [422] 0.020s
+2026-06-23 18:01:17 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [422] 0.018s
+2026-06-23 18:01:17 | [32mINFO[0m | app | main_new.py:52 | lifespan() | 🛑 Arrêt de l'application...
+2026-06-23 18:01:21 | [32mINFO[0m | app | logger.py:118 | setup_logging() | Logging configuré - Niveau: INFO, Répertoire: logs
+2026-06-23 18:01:21 | [32mINFO[0m | app | main_new.py:41 | lifespan() | 🚀 Démarrage de l'application...
+2026-06-23 18:01:21 | [32mINFO[0m | app | main_new.py:45 | lifespan() | ✅ Base de données initialisée
+2026-06-23 18:01:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-23 18:01:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:01:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:01:21 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-23 18:01:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.525s
+2026-06-23 18:01:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.533s
+2026-06-23 18:01:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.533s
+2026-06-23 18:01:22 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.540s
+2026-06-23 18:01:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:01:36 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:01:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.036s
+2026-06-23 18:01:36 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.038s
+2026-06-23 18:01:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:01:37 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:01:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.052s
+2026-06-23 18:01:37 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.051s
+2026-06-23 18:04:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:04:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.008s
+2026-06-23 18:04:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:04:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.009s
+2026-06-23 18:04:17 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-23 18:04:17 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.024s
+2026-06-23 18:47:53 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:47:53 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories
+2026-06-23 18:47:53 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:47:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.289s
+2026-06-23 18:47:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories [200] 0.293s
+2026-06-23 18:47:53 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.302s
+2026-06-23 18:48:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:48:10 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:48:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.019s
+2026-06-23 18:48:10 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.013s
+2026-06-23 18:48:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:48:11 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:48:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.019s
+2026-06-23 18:48:11 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.020s
+2026-06-23 18:48:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories/telephone/products
+2026-06-23 18:48:15 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories/telephone/products
+2026-06-23 18:48:15 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories/telephone/products [404] 0.010s
+2026-06-23 18:48:15 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories/telephone/products [404] 0.007s
+2026-06-23 18:48:28 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/recent
+2026-06-23 18:48:28 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/products/featured
+2026-06-23 18:48:28 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/recent [200] 0.032s
+2026-06-23 18:48:28 | [32mINFO[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/products/featured [200] 0.011s
+2026-06-23 18:57:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories/telephone/products
+2026-06-23 18:57:22 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories/telephone/products [404] 0.002s
+2026-06-23 18:57:22 | [32mINFO[0m | app | exception_middleware.py:221 | dispatch() | → GET /api/v1/categories/telephone/products
+2026-06-23 18:57:22 | [33mWARNING[0m | app | exception_middleware.py:232 | dispatch() | ← GET /api/v1/categories/telephone/products [404] 0.002s
+2026-06-24 10:51:10 | [32mINFO[0m | app | main_new.py:52 | lifespan() | 🛑 Arrêt de l'application...

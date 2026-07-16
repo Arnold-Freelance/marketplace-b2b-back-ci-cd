@@ -1,0 +1,111 @@
+<!-- ====================================================== -->
+<!-- app/templates/emails/welcome_email.html -->
+<!-- Template de bienvenue -->
+{% extends "base.html" %}
+
+{% block title %}Bienvenue - {{ app_name }}{% endblock %}
+
+{% block header_title %}🎉 Bienvenue !{% endblock %}
+
+{% block extra_styles %}
+<style>
+    .feature {
+        background: white;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border-left: 4px solid #4CAF50;
+    }
+    .feature strong {
+        color: #4CAF50;
+        font-size: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<p>Bonjour <strong>{{ user_name }}</strong>,</p>
+
+<p>Votre compte est maintenant <strong style="color: #4CAF50;">ACTIF</strong> ! 🚀</p>
+
+<p>Vous pouvez désormais profiter de toutes les fonctionnalités de notre plateforme :</p>
+
+<!-- Fonctionnalités selon le type d'utilisateur -->
+{% if user_type == "supplier" %}
+<div class="feature">
+    <strong>✓</strong> Publier vos produits
+</div>
+<div class="feature">
+    <strong>✓</strong> Gérer votre catalogue
+</div>
+<div class="feature">
+    <strong>✓</strong> Recevoir des demandes d'achat
+</div>
+{% elif user_type == "buyer" %}
+<div class="feature">
+    <strong>✓</strong> Rechercher des fournisseurs
+</div>
+<div class="feature">
+    <strong>✓</strong> Passer des commandes
+</div>
+<div class="feature">
+    <strong>✓</strong> Gérer vos achats
+</div>
+{% endif %}
+
+<div class="feature">
+    <strong>✓</strong> Gérer votre profil entreprise
+</div>
+
+<center style="margin: 30px 0;">
+    <a href="{{ login_url }}" class="button">
+        Se connecter maintenant
+    </a>
+</center>
+
+<hr class="divider">
+
+<p style="font-size: 14px;">
+    Besoin d'aide ? Notre équipe support est là pour vous à
+    <a href="mailto:{{ support_email }}" style="color: #667eea;">{{ support_email }}</a>
+</p>
+{% endblock %}
+
+
+<!-- ====================================================== -->
+<!-- app/templates/emails/password_reset.html -->
+<!-- Template de réinitialisation mot de passe -->
+{% extends "base.html" %}
+
+{% block title %}Réinitialisation de mot de passe - {{ app_name }}{% endblock %}
+
+{% block header_title %}🔒 Réinitialisation de mot de passe{% endblock %}
+
+{% block content %}
+<p>Bonjour <strong>{{ user_name }}</strong>,</p>
+
+<p>Vous avez demandé la réinitialisation de votre mot de passe.</p>
+
+<p>Cliquez sur le bouton ci-dessous pour créer un nouveau mot de passe :</p>
+
+<center>
+    <a href="{{ reset_link }}" class="button">
+        Réinitialiser mon mot de passe
+    </a>
+</center>
+
+<p style="margin-top: 20px; font-size: 14px; color: #666;">
+    ⏱️ Ce lien expire dans <strong>1 heure</strong>.
+</p>
+
+<hr class="divider">
+
+<p style="font-size: 13px; color: #999;">
+    Si vous n'avez pas demandé cette réinitialisation, ignorez cet email.
+    Votre mot de passe actuel restera inchangé.
+</p>
+
+<p style="font-size: 13px; color: #666;">
+    Si le bouton ne fonctionne pas, copiez-collez ce lien dans votre navigateur :<br>
+    <a href="{{ reset_link }}" style="color: #667eea; word-break: break-all;">{{ reset_link }}</a>
+</p>
