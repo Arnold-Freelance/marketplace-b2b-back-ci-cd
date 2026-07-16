@@ -14,7 +14,7 @@ pipeline {
         REGISTRY_NAMESPACE = "delmas007"
 
         // Images
-        IMAGE_NAME_DEV  = "market-place-b2b"
+        IMAGE_NAME_DEV  = "marketplace-b2b-back-ci-cd-dev"
         IMAGE_NAME_PROD = "marketplace-b2b-back-ci-cd-prod"
         IMAGE_TAG = "latest"
 
