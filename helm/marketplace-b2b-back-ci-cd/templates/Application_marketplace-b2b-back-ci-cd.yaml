@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: marketplace-b2b-back-ci-cd-dev
+    namespace: argocd
+    annotations:
+      notifications.argoproj.io/subscribe.on-sync-succeeded.slack: notification-argocd-back-dev
+      notifications.argoproj.io/subscribe.on-sync-failed.slack: notification-argocd-back-dev
+      notifications.argoproj.io/subscribe.on-outofsync.slack: notification-argocd-back-dev
+      notifications.argoproj.io/subscribe.on-health-degraded.slack: notification-argocd-back-dev
+spec:
+    destination:
+        namespace: marketplace-b2b-back-ci-cd-dev
+        server: https://kubernetes.default.svc
+    project: marketplace-b2b-back-ci-cd-dev
+    source:
+        helm:
+            parameters:
+                - name: image.repository
+                  value: delmas007/market-place-b2b
+                - name: image.tag
+                  value: 90ab9656-4d17-4306-a034-03890c39cea9
+        path: helm/marketplace-b2b-back-ci-cd-dev
+        repoURL: https://github.com/Arnold-Freelance/marketplace-b2b-back-ci-cd
+        targetRevision: helm-dev
+    syncPolicy:
+        automated:
+            prune: false
+            selfHeal: true

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: marketplace-b2b-back-ci-cd-dev-deployment
+  namespace: marketplace-b2b-back-ci-cd-dev
+  labels:
+    app: marketplace-b2b-back-ci-cd-dev-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: marketplace-b2b-back-ci-cd-dev-deployment
+  template:
+    metadata:
+      labels:
+        app: marketplace-b2b-back-ci-cd-dev-deployment
+        monitoring: enabled-pod
+    spec:
+      containers:
+        - name: marketplace-b2b-back-ci-cd-dev
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: Always
+
+          ports:
+            - name: metrics
+              containerPort: 8082
+      restartPolicy: Always

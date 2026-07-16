@@ -1,0 +1,4 @@
+replicaCount: 1
+
+enabled:
+    marketplace-b2b-back-ci-cd: true
