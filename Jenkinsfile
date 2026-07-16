@@ -20,6 +20,7 @@ pipeline {
 
         // Repo Helm (GitOps)
         AUTH_URL = "https://Arnold-Freelance:${GITHUB_TOKEN}@github.com/Arnold-Freelance/marketplace-b2b-back-ci-cd.git"
+
     }
 
     stages {
