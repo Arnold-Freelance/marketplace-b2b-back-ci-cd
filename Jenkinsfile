@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
 
     environment {
         // Credentials
@@ -269,15 +269,17 @@ pipeline {
 
         always {
 
-            always {
-                    node('contrôleur') {
-                        sh '''
-                            echo "Nettoyage Docker..."
-                            docker rm -f ${IMAGE_NAME} || true
-                            docker image prune -f || true
-                        '''
-                    }
-                }
+            node {
+
+                sh """
+
+                docker rm -f ${IMAGE_NAME} || true
+
+                docker image prune -f || true
+
+                """
+
+            }
 
         }
 
