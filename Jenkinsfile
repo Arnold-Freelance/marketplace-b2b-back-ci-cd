@@ -136,7 +136,7 @@ pipeline {
 
                 sleep 20
 
-                curl --fail http://localhost:8000/docs
+                curl --fail http://localhost:8000/api/docs
 
                 """
 
