@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Credentials
         DOCKERHUB_CREDS = credentials('dockerhub_delmas')
-        GITHUB_TOKEN    = credentials('GITHUB_TOKEN')
+        GITHUB_TOKEN    = credentials('GITHUB_TOKEN_ARNOLD')
 
         // Docker Hub
         REGISTRY_NAMESPACE = "delmas007"
