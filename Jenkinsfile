@@ -148,6 +148,7 @@ pipeline {
                 grep tag "\$VALUES_FILE" || true
 
                 sed -i "s|tag:.*|tag: ${BUILDVERSION}|" "\$VALUES_FILE"
+                sed -i "/image.tag/{n;s/.*/                  value: ${BUILDVERSION}/}" helm/marketplace-b2b-back-ci-cd/templates/Application_marketplace-b2b-back-ci-cd.yaml
 
                 grep tag "\$VALUES_FILE"
 
