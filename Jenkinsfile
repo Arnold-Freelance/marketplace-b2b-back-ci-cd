@@ -154,54 +154,52 @@ pipeline {
 
             steps {
 
-                sh '''
-                echo "$DOCKERHUB_CREDS_PSW" | docker login \
-                    -u "$DOCKERHUB_CREDS_USR" \
+                sh """
+                echo "\$DOCKERHUB_CREDS_PSW" | docker login \
+                    -u "\$DOCKERHUB_CREDS_USR" \
                     --password-stdin
 
-                docker push '"${REGISTRY_NAMESPACE}"'/'"${IMAGE_NAME}"':'"${IMAGE_TAG}"'
-                docker push '"${REGISTRY_NAMESPACE}"'/'"${IMAGE_NAME}"':'"${BUILDVERSION}"'
+                docker push ${REGISTRY_NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}
+                docker push ${REGISTRY_NAMESPACE}/${IMAGE_NAME}:${BUILDVERSION}
 
                 docker logout
 
                 rm -rf marketplace-b2b-back-ci-cd
 
-                git clone "$AUTH_URL"
+                git clone ${AUTH_URL}
 
                 cd marketplace-b2b-back-ci-cd
 
                 git fetch --all --prune
 
-                git checkout -B "$HELM_BRANCH" "origin/$HELM_BRANCH"
+                git checkout -B ${HELM_BRANCH} origin/${HELM_BRANCH}
 
                 git config user.email "angamancedrick@gmail.com"
                 git config user.name "delmas007"
 
-                if [ "$BRANCHE" = "dev" ]; then
+                if [ "${BRANCHE}" = "dev" ]; then
                     VALUES_FILE="helm/marketplace-b2b-back-ci-cd-dev/values.yaml"
                 else
                     VALUES_FILE="helm/marketplace-b2b-back-ci-cd/values.yaml"
                 fi
 
-                echo "Modification de $VALUES_FILE"
+                echo "Modification de \\$VALUES_FILE"
 
-                grep tag "$VALUES_FILE"
+                grep tag "\\$VALUES_FILE" || true
 
-                sed -i "s|tag:.*|tag: $BUILDVERSION|" "$VALUES_FILE"
+                sed -i "s|tag:.*|tag: ${BUILDVERSION}|" "\\$VALUES_FILE"
 
-                echo "Après modification"
+                grep tag "\\$VALUES_FILE"
 
-                grep tag "$VALUES_FILE"
-
-                git add "$VALUES_FILE"
+                git add "\\$VALUES_FILE"
 
                 if git diff --cached --quiet; then
                     echo "Aucun changement."
                 else
-                    git commit -m "chore($HELM_BRANCH): update image $BUILDVERSION"
-                    git push origin "$HELM_BRANCH"
+                    git commit -m "chore(${HELM_BRANCH}): update image ${BUILDVERSION}"
+                    git push origin ${HELM_BRANCH}
                 fi
-                '''
+                """
             }
         }
     }
