@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: marketplace-b2b-back-ci-cd-dev-deployment
+  name: marketplace-b2b-back-ci-cd-deployment
   namespace: marketplace-b2b-back-ci-cd
   labels:
-    app: marketplace-b2b-back-ci-cd-dev-deployment
+    app: marketplace-b2b-back-ci-cd-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: marketplace-b2b-back-ci-cd-dev-deployment
+      app: marketplace-b2b-back-ci-cd-deployment
   template:
     metadata:
       labels:
-        app: marketplace-b2b-back-ci-cd-dev-deployment
+        app: marketplace-b2b-back-ci-cd-deployment
         monitoring: enabled-pod
     spec:
       containers:
