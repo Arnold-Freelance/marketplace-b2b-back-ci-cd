@@ -184,17 +184,25 @@ pipeline {
                 fi
 
                 git config user.email "angamancedrick@gmail.com"
-
                 git config user.name "delmas007"
 
-                sed -i "/image.tag/{n;s/.*/                  value: ${BUILDVERSION}/}" helm/marketplace-b2b-back-ci-cd/templates/Application_cd marketplace-b2b-back-ci-cd_${BRANCHE}.yaml
-
-                if git diff --quiet; then
-                  echo "Aucun changement Helm."
+                if [ "${BRANCHE}" = "dev" ]; then
+                    VALUES_FILE="helm/marketplace-b2b-back-ci-cd-dev/values.yaml"
                 else
-                  git add helm/marketplace-b2b-back-ci-cd/templates/Application_marketplace-b2b-back-ci-cd_${BRANCHE}.yaml
-                  git commit -m "chore(${HELM_BRANCH}): update image to ${BUILDVERSION}"
-                  git push "$AUTH_URL" ${HELM_BRANCH}:${HELM_BRANCH}
+                    VALUES_FILE="helm/marketplace-b2b-back-ci-cd/values.yaml"
+                fi
+
+                echo "Modification de ${VALUES_FILE}"
+
+                sed -i "s/^  tag:.*/  tag: ${BUILDVERSION}/" "${VALUES_FILE}"
+
+                git add "${VALUES_FILE}"
+
+                if git diff --cached --quiet; then
+                    echo "Aucun changement Helm."
+                else
+                    git commit -m "chore(${HELM_BRANCH}): update image to ${BUILDVERSION}"
+                    git push origin ${HELM_BRANCH}
                 fi
 
                 """
