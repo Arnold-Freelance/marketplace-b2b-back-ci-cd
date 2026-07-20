@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: marketplace-b2b-back-ci-cd-dev-deployment
-  namespace: marketplace-b2b-back-ci-cd-dev
+  namespace: marketplace-b2b-back-ci-cd
   labels:
     app: marketplace-b2b-back-ci-cd-dev-deployment
 spec:
