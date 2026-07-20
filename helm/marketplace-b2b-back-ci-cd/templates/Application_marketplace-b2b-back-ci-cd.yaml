@@ -19,7 +19,7 @@ spec:
                 - name: image.repository
                   value: delmas007/market-place-b2b
                 - name: image.tag
-                  value: 90ab9656-4d17-4306-a034-03890c39cea9
+                  value: db01f8c9-f169-450b-8f12-297e0604d7ac
         path: helm/marketplace-b2b-back-ci-cd-dev
         repoURL: https://github.com/Arnold-Freelance/marketplace-b2b-back-ci-cd
         targetRevision: helm-dev
