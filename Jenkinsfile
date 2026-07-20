@@ -23,7 +23,6 @@ pipeline {
             agent any
 
             steps {
-
                 script {
 
                     def branch = env.BRANCH_NAME ?: env.GIT_BRANCH ?: ""
@@ -38,7 +37,6 @@ pipeline {
                         env.HELM_BRANCH = "helm-dev"
 
                     }
-
                     else if (branch.contains("prod")) {
 
                         env.BRANCHE = "prod"
@@ -47,85 +45,53 @@ pipeline {
                         env.HELM_BRANCH = "helm-prod"
 
                     }
-
                     else {
 
                         env.SHOULD_RUN = "false"
-
                         echo "Pipeline ignoré."
 
                     }
 
                 }
-
             }
-
         }
 
         stage("Version") {
-
             when {
-
                 expression { env.SHOULD_RUN == "true" }
-
             }
-
             agent any
-
             steps {
-
                 script {
-
                     env.BUILDVERSION = UUID.randomUUID().toString()
-
                     echo env.BUILDVERSION
-
                 }
-
             }
-
         }
 
         stage("Build Docker") {
-
             when {
-
                 expression { env.SHOULD_RUN == "true" }
-
             }
-
             agent any
-
             steps {
-
                 sh """
-
                 docker build \
                     --network=host \
                     -t ${REGISTRY_NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG} \
                     -t ${REGISTRY_NAMESPACE}/${IMAGE_NAME}:${BUILDVERSION} \
                     .
-
                 """
-
             }
-
         }
 
         stage("Smoke Test") {
-
             when {
-
                 expression { env.SHOULD_RUN == "true" }
-
             }
-
             agent any
-
             steps {
-
                 sh """
-
                 docker rm -f ${IMAGE_NAME} || true
 
                 docker run -d \
@@ -137,23 +103,16 @@ pipeline {
                 sleep 20
 
                 curl --fail http://localhost:8000/api/docs
-
                 """
-
             }
-
         }
 
         stage("Push Docker + GitOps") {
-
             when {
                 expression { env.SHOULD_RUN == "true" }
             }
-
             agent any
-
             steps {
-
                 sh """
                 echo "\$DOCKERHUB_CREDS_PSW" | docker login \
                     -u "\$DOCKERHUB_CREDS_USR" \
@@ -183,15 +142,15 @@ pipeline {
                     VALUES_FILE="helm/marketplace-b2b-back-ci-cd/values.yaml"
                 fi
 
-                echo "Modification de \\$VALUES_FILE"
+                echo "Modification de \$VALUES_FILE"
 
-                grep tag "\\$VALUES_FILE" || true
+                grep tag "\$VALUES_FILE" || true
 
-                sed -i "s|tag:.*|tag: ${BUILDVERSION}|" "\\$VALUES_FILE"
+                sed -i "s|tag:.*|tag: ${BUILDVERSION}|" "\$VALUES_FILE"
 
-                grep tag "\\$VALUES_FILE"
+                grep tag "\$VALUES_FILE"
 
-                git add "\\$VALUES_FILE"
+                git add "\$VALUES_FILE"
 
                 if git diff --cached --quiet; then
                     echo "Aucun changement."
@@ -207,15 +166,10 @@ pipeline {
     post {
 
         success {
-
             script {
-
                 slackSend(
-
                     channel: "#notification-jenkins-back",
-
                     color: "good",
-
                     message: """
                                 :white_check_mark: BUILD OK
 
@@ -231,23 +185,15 @@ pipeline {
 
                                 ${env.BUILD_URL}
                             """
-
                 )
-
             }
-
         }
 
         failure {
-
             script {
-
                 slackSend(
-
                     channel: "#notification-jenkins-back",
-
                     color: "danger",
-
                     message: """
                                 :x: BUILD ECHEC
 
@@ -259,25 +205,18 @@ pipeline {
 
                                 ${env.BUILD_URL}
                             """
-
                 )
-
             }
-
         }
 
         always {
-
-            always {
-                    node('contrôleur') {
-                        sh '''
-                            echo "Nettoyage Docker..."
-                            docker rm -f ${IMAGE_NAME} || true
-                            docker image prune -f || true
-                        '''
-                    }
-                }
-
+            node('contrôleur') {
+                sh '''
+                    echo "Nettoyage Docker..."
+                    docker rm -f ${IMAGE_NAME} || true
+                    docker image prune -f || true
+                '''
+            }
         }
 
     }
