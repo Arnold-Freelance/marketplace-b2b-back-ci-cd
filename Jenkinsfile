@@ -15,6 +15,7 @@ pipeline {
         IMAGE_TAG = "latest"
 
         AUTH_URL = "https://Arnold-Freelance:${GITHUB_TOKEN}@github.com/Arnold-Freelance/marketplace-b2b-back-ci-cd.git"
+
     }
 
     stages {
