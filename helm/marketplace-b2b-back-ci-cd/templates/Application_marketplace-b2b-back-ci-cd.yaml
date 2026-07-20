@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-    name: marketplace-b2b-back-ci-cd-dev
+    name: marketplace-b2b-back-ci-cd
     namespace: argocd
     annotations:
       notifications.argoproj.io/subscribe.on-sync-succeeded.slack: notification-argocd-back-dev
@@ -10,9 +10,9 @@ metadata:
       notifications.argoproj.io/subscribe.on-health-degraded.slack: notification-argocd-back-dev
 spec:
     destination:
-        namespace: marketplace-b2b-back-ci-cd-dev
+        namespace: marketplace-b2b-back-ci-cd
         server: https://kubernetes.default.svc
-    project: marketplace-b2b-back-ci-cd-dev
+    project: marketplace-b2b-back-ci-cd
     source:
         helm:
             parameters:
