@@ -269,17 +269,15 @@ pipeline {
 
         always {
 
-            node {
-
-                sh """
-
-                docker rm -f ${IMAGE_NAME} || true
-
-                docker image prune -f || true
-
-                """
-
-            }
+            always {
+                    node('contrôleur') {
+                        sh '''
+                            echo "Nettoyage Docker..."
+                            docker rm -f ${IMAGE_NAME} || true
+                            docker image prune -f || true
+                        '''
+                    }
+                }
 
         }
 
