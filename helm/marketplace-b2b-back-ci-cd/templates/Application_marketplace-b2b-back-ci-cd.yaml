@@ -12,7 +12,7 @@ spec:
     destination:
         namespace: marketplace-b2b-back-ci-cd
         server: https://kubernetes.default.svc
-    project: marketplace-b2b-back-ci-cd
+    project: marketplace-b2b-back-ci-cd-projet
     source:
         helm:
             parameters:
