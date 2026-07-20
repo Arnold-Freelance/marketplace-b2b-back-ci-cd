@@ -171,48 +171,51 @@ pipeline {
     post {
 
         success {
-            script {
-                slackSend(
-                    channel: "#notification-jenkins-back",
-                    color: "good",
-                    message: """
-                                :white_check_mark: BUILD OK
+                        script {
+                            def duration = currentBuild.durationString.replace(' and counting', '')
 
-                                Projet : ${env.JOB_NAME}
+                            slackSend(
+                                channel: '#notification-jenkins-back',
+                                color: 'good',
+                                message: """
+                                :white_check_mark: *BUILD BACK RÉUSSI*
 
-                                Branche : ${env.BRANCHE}
+                                *Projet*   : ${env.JOB_NAME}
+                                *Branche*  : ${env.BRANCHE}
+                                *Build*    : #${env.BUILD_NUMBER}
+                                *Durée*    : ${duration}
 
-                                Build : #${env.BUILD_NUMBER}
+                                *Image Docker* :
+                                `${env.REGISTRY_NAMESPACE}/${env.IMAGE_NAME}:${env.BUILDVERSION}`
 
-                                Image :
+                                🔗 *Lien Jenkins* :
+                                <${env.BUILD_URL}|Voir le build>
+                                """
+                            )
+                        }
+                    }
 
-                                ${env.REGISTRY_NAMESPACE}/${env.IMAGE_NAME}:${env.BUILDVERSION}
+                    failure {
+                        script {
+                            def duration = currentBuild.durationString.replace(' and counting', '')
 
-                                ${env.BUILD_URL}
-                            """
-                )
-            }
-        }
+                            slackSend(
+                                channel: '#notification-jenkins-back',
+                                color: 'danger',
+                                message: """
+                                      :x: *BUILD BACK ÉCHOUÉ*
 
-        failure {
-            script {
-                slackSend(
-                    channel: "#notification-jenkins-back",
-                    color: "danger",
-                    message: """
-                                :x: BUILD ECHEC
+                                      *Projet*   : ${env.JOB_NAME}
+                                      *Branche*  : ${env.BRANCHE ?: 'unknown'}
+                                      *Build*    : #${env.BUILD_NUMBER}
+                                      *Durée*    : ${duration}
 
-                                Projet : ${env.JOB_NAME}
-
-                                Branche : ${env.BRANCHE}
-
-                                Build : #${env.BUILD_NUMBER}
-
-                                ${env.BUILD_URL}
-                            """
-                )
-            }
-        }
+                                      🔗 *Lien Jenkins* :
+                                      <${env.BUILD_URL}|Voir le build>
+                                      """
+                            )
+                        }
+                    }
 
         always {
             node('contrôleur') {
