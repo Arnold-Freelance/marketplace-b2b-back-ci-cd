@@ -218,13 +218,19 @@ pipeline {
                     }
 
         always {
-            node('contrôleur') {
-                sh '''
-                    echo "Nettoyage Docker..."
-                    docker rm -f ${IMAGE_NAME} || true
-                    docker image prune -f || true
-                '''
-            }
+           script {
+               if (env.IMAGE_NAME) {
+                   node {
+                       sh '''
+                           echo "Nettoyage Docker..."
+                           docker rm -f $IMAGE_NAME || true
+                           docker image prune -f || true
+                       '''
+                   }
+               } else {
+                   echo "Pas de nettoyage (pipeline ignoré)."
+               }
+           }
         }
 
     }
